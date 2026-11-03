@@ -43,14 +43,45 @@ function graphEditorDevServer(): Plugin {
   }
 }
 
+// Tesseract.js (plaque reading) runs from our own site, not a CDN: the worker,
+// the WebAssembly core (three builds; each phone downloads the one it
+// supports) and the English model. Served from node_modules while developing
+// and copied into the build for Vercel.
+const TESSERACT_FILES: Record<string, string> = {
+  'tesseract/worker.min.js': 'node_modules/tesseract.js/dist/worker.min.js',
+  'tesseract/core/tesseract-core-lstm.wasm.js': 'node_modules/tesseract.js-core/tesseract-core-lstm.wasm.js',
+  'tesseract/core/tesseract-core-simd-lstm.wasm.js': 'node_modules/tesseract.js-core/tesseract-core-simd-lstm.wasm.js',
+  'tesseract/core/tesseract-core-relaxedsimd-lstm.wasm.js': 'node_modules/tesseract.js-core/tesseract-core-relaxedsimd-lstm.wasm.js',
+  'tesseract/lang/eng.traineddata.gz': 'node_modules/@tesseract.js-data/eng/4.0.0_best_int/eng.traineddata.gz',
+}
+function tesseractAssets(): Plugin {
+  return {
+    name: 'novagator-tesseract-assets',
+    configureServer(server) {
+      server.middlewares.use((req, res, next) => {
+        const path = decodeURIComponent((req.url ?? '').split('?')[0]).replace(/^\/+/, '')
+        const src = TESSERACT_FILES[path]
+        if (!src) return next()
+        res.setHeader('Content-Type', path.endsWith('.js') ? 'text/javascript' : 'application/octet-stream')
+        res.end(readFileSync(resolve(ROOT, src)))
+      })
+    },
+    generateBundle() {
+      for (const [fileName, src] of Object.entries(TESSERACT_FILES))
+        this.emitFile({ type: 'asset', fileName, source: readFileSync(resolve(ROOT, src)) })
+    },
+  }
+}
+
 export default defineConfig({
-  plugins: [graphEditorDevServer()],
+  plugins: [graphEditorDevServer(), tesseractAssets()],
   build: {
     // Pages that ship to Vercel. graph.html (the editor) stays dev-only.
     rollupOptions: {
       input: {
         main: resolve(ROOT, 'index.html'),
         route: resolve(ROOT, 'route.html'),
+        locate: resolve(ROOT, 'locate.html'),
       },
     },
   },

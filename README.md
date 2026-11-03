@@ -27,10 +27,45 @@ The camera and motion sensors only work over HTTPS. To test them on a phone, use
 | 1: Data capture | Floor 3 done (all 119 rooms logged); other floors next |
 | 2: Map model / nav graph | ✅ Floor 3 graph done and checked in the editor; other floors next |
 | 3: Routing | ✅ Floor 3: routing, directions, tests, route page. Directions still to be walked on site |
-| 4: Localization | — |
+| 4: Localization | ✅ Floor 3: plaque reading (98.5% on the photo set, no wrong rooms), manual entry, step + compass tracking, locate page. To be walked on site |
 | 5: UI | — |
 | 6: Testing and evaluation | — |
 | 7: Stretch goals | — |
+
+## Phase 4: localization (floor 3)
+
+Try it: open https://novagator.vercel.app/locate.html on the iPhone (camera and motion sensors need HTTPS). On a computer, `npm run dev` and open http://localhost:5173/locate.html?sim. In sim mode, ← → turn and ↑ takes a step, and "Use a photo" scans a plaque photo instead of using the camera.
+
+How it finds you, from most to least reliable:
+1. **Scan a plaque.** Fit the plaque in the on-screen box, and it reads continuously until 2 of 3 frames agree. Scanning also calibrates the compass: you're facing the wall, and the plaque database knows which way that wall faces.
+2. **"I'm at room ___".** Always available as a fallback.
+3. **Tracking between scans.** Steps come from the accelerometer and direction from the compass, and the dot is kept on the hallways. At every turn it snaps to the nearest junction with a branch in your new direction, which also cancels distance drift. After 30 m without a scan it asks you to scan the next plaque you pass.
+4. **Step length calibrates itself.** Each time you walk between two scanned plaques, the hallway distance divided by the steps counted adjusts it.
+
+Pick a destination and the route and next instruction update as you walk.
+
+Plaque reading (`src/locate/plaque.ts`) works the same way on every plaque style on floor 3: square name plates, wide signs, and the paper printouts on 312/314.
+1. Adaptive threshold, which copes with shadows from raised letters.
+2. Find the tallest line of 2–6 glyph-sized blobs; that's the room number.
+3. Blank everything except those glyphs, which stops plaque edges being read as a "1".
+4. Straighten the line, then read it with Tesseract at 4 crop sizes.
+5. Vote, then fuzzy-match against the room list using a look-alike table (8/B, 0/D, 5/S, 1/I…). If a glyph is missing or two rooms are equally close, it gives no answer rather than a guess.
+
+Tesseract runs from this site, not a CDN. It's about 7 MB on the first scan and cached on the phone after that.
+
+Data: `src/data/floor3.plaques.json` lists 85 plaques: which door each one hangs beside and which way it faces. It's built from `private/plaques/floor3/manifest.csv` by `npm run build-plaques`. Plaques the builder wasn't sure about have a `check` note (8 of them: two-door rooms and suite offices).
+
+Measuring:
+- `npm run ocr-eval` reads every photo in `private/plaques/floor3/`, as taken and distorted (dim, tilted ±10°, blurred, farther away, off-center). Latest run, 581 frames: 98.5% correct, **0 wrong rooms**, 9 with no answer (the app just reads the next frame).
+- `npm test` adds `src/locate/locate.test.ts`: room matching, frame voting, plaque data, step counting on a simulated walk, compass calibration, and 300 simulated 5–40 m walks with ±12° compass noise:
+
+| Case | Within 3 m | Median error |
+|---|---|---|
+| Navigating, step length calibrated | 95% | 0.0 m |
+| Navigating, step length ±10% | 88% | 0.1 m |
+| No route, step length ±10% | 86% | 0.2 m |
+
+Code in `src/locate/`: `plaque.ts` (image + matching), `ocr-browser.ts` (Tesseract worker), `plaques.ts` (plaque positions), `tracker.ts` (steps, compass, map matching), `sensors.ts` (iPhone permission + events), `page.ts` (the locate page). The map drawing shared with the route page moved to `src/ui/floormap.ts`.
 
 ## Phase 3: routing (floor 3)
 

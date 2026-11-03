@@ -8,10 +8,10 @@ import floor3 from '../data/floor3.graph.json'
 import { Router, type Route, type RouteMode } from './router.ts'
 import { directions, formatDistance, type Step, type StepIcon, type Units } from './directions.ts'
 import { findPlace, parseQuery, type Place } from './places.ts'
+import { createFloorMap, svgEl, sx, sy } from '../ui/floormap.ts'
 
 const g = floor3 as NavGraph
 const R = new Router(g)
-const NS = 'http://www.w3.org/2000/svg'
 
 let mode: RouteMode = 'shortest'
 let units: Units = 'ft'
@@ -51,123 +51,15 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 </main>`
 const $ = <T extends Element>(s: string) => document.querySelector<T>(s)!
 const svg = $<SVGSVGElement>('#map'), q = $<HTMLInputElement>('#q')
-const el = (tag: string, attrs: Record<string, string | number>, parent?: Element) => {
-  const e = document.createElementNS(NS, tag)
-  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, String(v))
-  parent?.appendChild(e)
-  return e
-}
-// world (x right, y up) → svg (y down)
-const sx = (n: { x: number }) => n.x, sy = (n: { y: number }) => -n.y
+const el = svgEl
 
-// ---------- base map, drawn from the graph itself
-function drawBase() {
-  const base = $('#base'), taps = $('#taps')
-  const hall = el('path', { class: 'hall', 'stroke-width': 2.4, d: '' }, base)
-  let d = ''
-  for (const e of g.edges) {
-    const a = R.nodes.get(e.a)!, b = R.nodes.get(e.b)!
-    if (e.kind === 'corridor') d += `M${sx(a)},${sy(a)}L${sx(b)},${sy(b)}`
-    else el('line', { class: 'link', x1: sx(a), y1: sy(a), x2: sx(b), y2: sy(b) }, base)
-  }
-  hall.setAttribute('d', d)
-  const POI: Partial<Record<GraphNode['type'], [string, string]>> = { elevator: ['#7c3aed', 'E'], stairs: ['#ea580c', 'S'], restroom: ['#0891b2', 'WC'] }
-  for (const n of g.nodes) {
-    const poi = POI[n.type]
-    if (poi) {
-      const grp = el('g', { class: 'poi' }, base)
-      el('circle', { cx: sx(n), cy: sy(n), r: 0.85, fill: poi[0] }, grp)
-      el('text', { x: sx(n), y: sy(n), style: poi[1].length > 1 ? 'font-size:.6px' : '' }, grp).textContent = poi[1]
-    } else if (n.type === 'room') {
-      el('circle', { class: 'room', cx: sx(n), cy: sy(n), r: 0.3, 'data-id': n.id }, base)
-      el('text', { class: 'rlabel', x: sx(n), y: sy(n) - 0.55 }, base).textContent = n.room ?? ''
-    }
-    if (n.room) {
-      const t = el('circle', { class: 'tap', cx: sx(n), cy: sy(n), r: 1.3 }, taps)
-      t.addEventListener('click', () => tapRoom(n))
-    }
-  }
-}
-
-// ---------- plan underlay: dev server only
-fetch('/private/floorplans/Drosdick_3_floor.svg').then((r) => (r.ok && (r.headers.get('content-type') ?? '').includes('svg') ? r.text() : Promise.reject())).then((txt) => {
-  const map = new DOMParser().parseFromString(txt, 'image/svg+xml').querySelector('#map')
-  if (!map) return
-  const plan = $('#plan')
-  plan.appendChild(document.importNode(map, true))
-  plan.querySelectorAll('path, line, polyline').forEach((e) => e.setAttribute('vector-effect', 'non-scaling-stroke'))
-  for (const [id, w] of [['walls', '1.3'], ['doors', '0.6'], ['detail', '0.4'], ['labels', '0.4'], ['misc', '0.4']])
-    plan.querySelector(`#${id}`)?.setAttribute('stroke-width', w)
-  plan.querySelector('#labels')?.setAttribute('style', 'display:none')
-  $<HTMLElement>('#plantog').style.display = 'block'
-  svg.classList.add('plan-on')
-}).catch(() => { /* deployed site: no plan, the graph map is enough */ })
-$<HTMLInputElement>('#showplan').onchange = (e) => {
-  const on = (e.target as HTMLInputElement).checked
-  $<SVGGElement>('#plan').style.display = on ? '' : 'none'
-  svg.classList.toggle('plan-on', on)
-}
-
-// ---------- camera: viewBox pan / zoom / pinch
-let vb = { x: -50, y: -40, w: 108, h: 60 }
-const setVB = () => svg.setAttribute('viewBox', `${vb.x} ${vb.y} ${vb.w} ${vb.h}`)
-function fitTo(x0: number, y0: number, x1: number, y1: number, pad = 3) {
-  const r = svg.getBoundingClientRect()
-  const w = x1 - x0 + 2 * pad, h = y1 - y0 + 2 * pad
-  const s = Math.max(w / Math.max(r.width, 1), h / Math.max(r.height, 1))
-  vb = { w: r.width * s, h: r.height * s, x: (x0 + x1) / 2 - (r.width * s) / 2, y: (y0 + y1) / 2 - (r.height * s) / 2 }
-  setVB()
-}
-function fitAll() {
-  const xs = g.nodes.map(sx), ys = g.nodes.map(sy)
-  fitTo(Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys), 2)
-}
+// ---------- map (drawn from the graph; floor plan underneath on the dev server)
+const fm = createFloorMap(svg, g, { floor: '3', onTapRoom: tapRoom, planToggle: $<HTMLElement>('#plantog'), planCheckbox: $<HTMLInputElement>('#showplan') })
+const fitAll = () => fm.fitAll()
 function fitRoute() {
   if (!current) return fitAll()
-  const pts = current.route.nodes.map((id) => R.nodes.get(id)!)
-  const xs = pts.map(sx), ys = pts.map(sy)
-  fitTo(Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys), 6)
+  fm.fitPoints(current.route.nodes.map((id) => R.nodes.get(id)!), 6)
 }
-const toSvg = (cx: number, cy: number) => {
-  const r = svg.getBoundingClientRect()
-  return { x: vb.x + ((cx - r.left) / r.width) * vb.w, y: vb.y + ((cy - r.top) / r.height) * vb.h }
-}
-function zoomAt(cx: number, cy: number, f: number) {
-  const p = toSvg(cx, cy)
-  const w = Math.min(Math.max(vb.w * f, 8), 400), k = w / vb.w
-  vb = { x: p.x - (p.x - vb.x) * k, y: p.y - (p.y - vb.y) * k, w, h: vb.h * k }
-  setVB()
-}
-svg.addEventListener('wheel', (e) => { e.preventDefault(); zoomAt(e.clientX, e.clientY, Math.exp(e.deltaY * 0.0015)) }, { passive: false })
-const ptrs = new Map<number, { x: number; y: number }>()
-let pinch = 0
-svg.addEventListener('pointerdown', (e) => {
-  ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY })
-  if (ptrs.size === 2) { const [a, b] = [...ptrs.values()]; pinch = Math.hypot(a.x - b.x, a.y - b.y) }
-})
-svg.addEventListener('pointermove', (e) => {
-  const prev = ptrs.get(e.pointerId)
-  if (!prev) return
-  const cur = { x: e.clientX, y: e.clientY }
-  if (ptrs.size === 1) {
-    if (!svg.hasPointerCapture(e.pointerId) && Math.hypot(cur.x - prev.x, cur.y - prev.y) < 4) return // still a tap
-    svg.setPointerCapture(e.pointerId)
-    const r = svg.getBoundingClientRect()
-    vb.x -= ((cur.x - prev.x) / r.width) * vb.w
-    vb.y -= ((cur.y - prev.y) / r.height) * vb.h
-    setVB()
-    ptrs.set(e.pointerId, cur)
-  } else if (ptrs.size === 2) {
-    ptrs.set(e.pointerId, cur)
-    const [a, b] = [...ptrs.values()]
-    const dd = Math.hypot(a.x - b.x, a.y - b.y)
-    if (pinch) zoomAt((a.x + b.x) / 2, (a.y + b.y) / 2, pinch / dd)
-    pinch = dd
-  }
-})
-const up = (e: PointerEvent) => { ptrs.delete(e.pointerId); if (ptrs.size < 2) pinch = 0 }
-svg.addEventListener('pointerup', up)
-svg.addEventListener('pointercancel', up)
 $('#fit').addEventListener('click', fitRoute)
 
 // ---------- routing
@@ -299,7 +191,6 @@ try { const u = localStorage.getItem('novagator.units'); if (u === 'm' || u === 
 const params = new URLSearchParams(location.search)
 const m0 = params.get('mode'); if (m0 === 'shortest' || m0 === 'accessible' || m0 === 'fewest-turns') mode = m0
 syncSeg('modes', mode); syncSeg('units', units)
-drawBase()
 requestAnimationFrame(() => {
   fitAll()
   const q0 = params.get('q')

@@ -7,10 +7,17 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "node --test src/graph/validate.test.ts src/route/route.test.ts"
+    "test": "node --test src/graph/validate.test.ts src/route/route.test.ts src/locate/locate.test.ts",
+    "ocr-eval": "node tools/ocr-eval.ts",
+    "build-plaques": "node tools/build-plaques.ts"
   },
   "devDependencies": {
+    "@tesseract.js-data/eng": "^1.0.0",
+    "sharp": "^0.35.5",
     "typescript": "~6.0.2",
     "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "tesseract.js": "^7.0.0"
   }
 }

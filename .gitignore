@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 private/
+# Tesseract model cache (npm run ocr-eval)
+*.traineddata
