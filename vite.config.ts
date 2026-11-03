@@ -45,4 +45,13 @@ function graphEditorDevServer(): Plugin {
 
 export default defineConfig({
   plugins: [graphEditorDevServer()],
+  build: {
+    // Pages that ship to Vercel. graph.html (the editor) stays dev-only.
+    rollupOptions: {
+      input: {
+        main: resolve(ROOT, 'index.html'),
+        route: resolve(ROOT, 'route.html'),
+      },
+    },
+  },
 })

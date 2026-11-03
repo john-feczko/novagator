@@ -25,12 +25,46 @@ The camera and motion sensors only work over HTTPS. To test them on a phone, use
 |---|---|
 | 0: Decisions and setup | ✅ Done (floor plans requested from facilities) |
 | 1: Data capture | Floor 3 done (all 119 rooms logged); other floors next |
-| 2: Map model / nav graph | Floor 3 graph generated; being checked in the editor |
-| 3: Routing | — |
+| 2: Map model / nav graph | ✅ Floor 3 graph done and checked in the editor; other floors next |
+| 3: Routing | ✅ Floor 3: routing, directions, tests, route page. Directions still to be walked on site |
 | 4: Localization | — |
 | 5: UI | — |
 | 6: Testing and evaluation | — |
 | 7: Stretch goals | — |
+
+## Phase 3: routing (floor 3)
+
+Try it: `npm run dev`, then open http://localhost:5173/route.html (or https://novagator.vercel.app/route.html). Type `from 301 to 318`, or tap a room for the start and another for the destination. Running locally draws the floor plan underneath; the deployed page draws the map from the graph only, so the plans stay private. The URL keeps the query (`?q=...&mode=...`), so a route can be shared as a link.
+
+What you can type:
+- Room numbers: `318`, `Room 318`, `rm 3-18`, `309a`
+- Room names: `staff lounge`, `rfid lab`
+- Nearest of a kind: `restroom`, `men's room`, `women's restroom`, `elevator`, `stairs`, `stair 4`
+- Typos get suggestions (`3119` → 311, 319, …)
+
+Code in `src/route/`:
+- `router.ts`: A* over directed edges, so turns can be priced. Options:
+  - **Shortest:** least walking.
+  - **Accessible:** never uses an edge marked `stairs`. On one floor this only matters for routes *to* a stair; it does the real work once floors are joined through elevators.
+  - **Fewest turns:** each turn over 35° costs an extra 20 m.
+  - Walking *through* a room costs an extra 150 m, so routes stay in the hallways and only pass through a room to reach an inner office (309A through 309, 318 through 317).
+  - Asking for a type (e.g. restroom) routes to whichever is nearest by walking distance.
+- `directions.ts`: turn-by-turn text from the path geometry: leaving the room, turns at junctions (with landmarks such as "by the elevators" or "by Stair 4"), side hallways passed, and arrival ("Room 356 is the third door on your left"). Each step also carries an icon type and its distance from the start, ready for the Phase 5 navigation screen.
+- `places.ts`: turns typed text into graph nodes, and parses "from X to Y".
+- `page.ts`: the route page.
+
+To join floors later, add edges between matching stair and elevator nodes on each floor (stair edges with `stairs: true`). The router needs no changes.
+
+`npm test` now also runs `src/route/route.test.ts`, which checks:
+- Every room reaches every other room (about 16,600 pairs), and every set of directions reads cleanly.
+- Routes are symmetric.
+- No route cuts through a classroom.
+- Fewest-turns never has more turns than shortest, and shortest is never longer than fewest-turns.
+- Accessible routes never use stairs.
+- "Nearest" really is nearest.
+- Place lookup works, and one known route gives the expected directions.
+
+**Still to do on site:** walk a handful of routes and check the directions match what you see, especially the door counts ("third door on your left") and "side hallways" passed. Door counts come from the doors on the plan, so unmarked closets or double doors can throw them off.
 
 ## Phase 2: navigation graph (floor 3)
 
