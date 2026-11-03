@@ -1,0 +1,1391 @@
+{
+ "version": 1,
+ "building": "Drosdick Hall",
+ "generated": "2026-11-03",
+ "units": "meters",
+ "frame": "x right, y up on the plan sheet; origin = Stair 1 inner corner (same on every floor)",
+ "floors": [
+  "3"
+ ],
+ "todo": [],
+ "rooms": {
+  "300": {
+   "node": "3-R124",
+   "name": "Housekeeping",
+   "floor": "3"
+  },
+  "301": {
+   "node": "3-R123",
+   "name": "Elec",
+   "floor": "3"
+  },
+  "304": {
+   "node": "3-R017",
+   "name": "Flex Wet Clean Instructional",
+   "floor": "3"
+  },
+  "305": {
+   "node": "3-R001",
+   "name": "Rfid Lab",
+   "floor": "3"
+  },
+  "306": {
+   "node": "3-R016",
+   "name": "Flex Wet Clean Instructional",
+   "floor": "3"
+  },
+  "307": {
+   "node": "3-R106",
+   "name": "Cyber Physical/Systems Security",
+   "floor": "3"
+  },
+  "308": {
+   "node": "3-R013",
+   "name": "Flex Wet Clean Instructional",
+   "floor": "3"
+  },
+  "309": {
+   "node": "3-R119",
+   "name": "External Relations",
+   "floor": "3"
+  },
+  "310": {
+   "node": "3-R117",
+   "name": "Finance & Admin",
+   "floor": "3"
+  },
+  "311": {
+   "node": "3-R118",
+   "name": "Staff Offices (Research, Seed, And F&A Staff)",
+   "floor": "3"
+  },
+  "312": {
+   "node": "3-R008",
+   "name": "Distance Education",
+   "floor": "3"
+  },
+  "314": {
+   "node": "3-R007",
+   "name": "Distance Education",
+   "floor": "3"
+  },
+  "315": {
+   "node": "3-R113",
+   "name": "Student Research",
+   "floor": "3"
+  },
+  "316": {
+   "node": "3-R114",
+   "name": "Staff Lounge",
+   "floor": "3"
+  },
+  "317": {
+   "node": "3-R023",
+   "name": "Electrical & Computer Engineering Suite",
+   "floor": "3"
+  },
+  "318": {
+   "node": "3-R115",
+   "name": "Dept. Office",
+   "floor": "3"
+  },
+  "319": {
+   "node": "3-R019",
+   "name": "Office",
+   "floor": "3"
+  },
+  "320": {
+   "node": "3-R020",
+   "name": "Office",
+   "floor": "3"
+  },
+  "321": {
+   "node": "3-R021",
+   "name": "Office",
+   "floor": "3"
+  },
+  "322": {
+   "node": "3-R022",
+   "name": "Office",
+   "floor": "3"
+  },
+  "323": {
+   "node": "3-R024",
+   "name": "Office",
+   "floor": "3"
+  },
+  "324": {
+   "node": "3-R029",
+   "name": "Grad/Phd/Tech",
+   "floor": "3"
+  },
+  "325": {
+   "node": "3-R025",
+   "name": "Office",
+   "floor": "3"
+  },
+  "326": {
+   "node": "3-R026",
+   "name": "Office",
+   "floor": "3"
+  },
+  "327": {
+   "node": "3-R027",
+   "name": "Office",
+   "floor": "3"
+  },
+  "328": {
+   "node": "3-R030",
+   "name": "Graduate Lounge",
+   "floor": "3"
+  },
+  "329": {
+   "node": "3-R031",
+   "name": "Storage",
+   "floor": "3"
+  },
+  "330": {
+   "node": "3-R028",
+   "name": "Office",
+   "floor": "3"
+  },
+  "331": {
+   "node": "3-R040",
+   "name": "Mtg Rm",
+   "floor": "3"
+  },
+  "332": {
+   "node": "3-R032",
+   "name": "Storage",
+   "floor": "3"
+  },
+  "333": {
+   "node": "3-R034",
+   "name": "Office",
+   "floor": "3"
+  },
+  "334": {
+   "node": "3-R035",
+   "name": "Office",
+   "floor": "3"
+  },
+  "335": {
+   "node": "3-R036",
+   "name": "Office",
+   "floor": "3"
+  },
+  "336": {
+   "node": "3-R037",
+   "name": "Office",
+   "floor": "3"
+  },
+  "337": {
+   "node": "3-R038",
+   "name": "Office",
+   "floor": "3"
+  },
+  "338": {
+   "node": "3-R039",
+   "name": "Office",
+   "floor": "3"
+  },
+  "339": {
+   "node": "3-R041",
+   "name": "Green Roof Laboratory",
+   "floor": "3"
+  },
+  "340": {
+   "node": "3-R043",
+   "name": "Office",
+   "floor": "3"
+  },
+  "341": {
+   "node": "3-R044",
+   "name": "Office",
+   "floor": "3"
+  },
+  "342": {
+   "node": "3-R045",
+   "name": "Mtg Rm",
+   "floor": "3"
+  },
+  "343": {
+   "node": "3-R071",
+   "name": "Office",
+   "floor": "3"
+  },
+  "344": {
+   "node": "3-R046",
+   "name": "Dept. Office",
+   "floor": "3"
+  },
+  "345": {
+   "node": "3-R072",
+   "name": "Office",
+   "floor": "3"
+  },
+  "346": {
+   "node": "3-R048",
+   "name": "Dept. Office",
+   "floor": "3"
+  },
+  "347": {
+   "node": "3-R073",
+   "name": "Office",
+   "floor": "3"
+  },
+  "348": {
+   "node": "3-R051",
+   "name": "Mtg Rm",
+   "floor": "3"
+  },
+  "349": {
+   "node": "3-R074",
+   "name": "Office",
+   "floor": "3"
+  },
+  "350": {
+   "node": "3-R050",
+   "name": "Office",
+   "floor": "3"
+  },
+  "351": {
+   "node": "3-R075",
+   "name": "Office",
+   "floor": "3"
+  },
+  "352": {
+   "node": "3-R052",
+   "name": "Office",
+   "floor": "3"
+  },
+  "353": {
+   "node": "3-R076",
+   "name": "Office",
+   "floor": "3"
+  },
+  "356": {
+   "node": "3-R128",
+   "name": "Women",
+   "floor": "3"
+  },
+  "357": {
+   "node": "3-R077",
+   "name": "Copy Room",
+   "floor": "3"
+  },
+  "359": {
+   "node": "3-R078",
+   "name": "Office",
+   "floor": "3"
+  },
+  "360": {
+   "node": "3-R127",
+   "name": "Men",
+   "floor": "3"
+  },
+  "361": {
+   "node": "3-R079",
+   "name": "Office",
+   "floor": "3"
+  },
+  "362": {
+   "node": "3-R065",
+   "name": "Grad/Phd/Tech",
+   "floor": "3"
+  },
+  "363": {
+   "node": "3-R080",
+   "name": "Office",
+   "floor": "3"
+  },
+  "365": {
+   "node": "3-R081",
+   "name": "Office",
+   "floor": "3"
+  },
+  "366": {
+   "node": "3-R070",
+   "name": "Grad/Phd/Tech",
+   "floor": "3"
+  },
+  "367": {
+   "node": "3-R082",
+   "name": "Office",
+   "floor": "3"
+  },
+  "368": {
+   "node": "3-R096",
+   "name": "Grad/Phd/Tech",
+   "floor": "3"
+  },
+  "369": {
+   "node": "3-R083",
+   "name": "Office",
+   "floor": "3"
+  },
+  "370": {
+   "node": "3-R097",
+   "name": "Mechanical Engineering Suite",
+   "floor": "3"
+  },
+  "371": {
+   "node": "3-R084",
+   "name": "Elec",
+   "floor": "3"
+  },
+  "372": {
+   "node": "3-R105",
+   "name": "Mechanical",
+   "floor": "3"
+  },
+  "373": {
+   "node": "3-R085",
+   "name": "Tele/Data",
+   "floor": "3"
+  },
+  "374": {
+   "node": "3-R086",
+   "name": "Grad/Phd/Tech",
+   "floor": "3"
+  },
+  "376": {
+   "node": "3-R095",
+   "name": "Grad/Phd/Tech",
+   "floor": "3"
+  },
+  "378": {
+   "node": "3-R094",
+   "name": "Grad/Phd/Tech",
+   "floor": "3"
+  },
+  "381": {
+   "node": "3-R126",
+   "name": "Men",
+   "floor": "3"
+  },
+  "383": {
+   "node": "3-R104",
+   "name": "Plumbing",
+   "floor": "3"
+  },
+  "385": {
+   "node": "3-R125",
+   "name": "Women",
+   "floor": "3"
+  },
+  "387": {
+   "node": "3-R122",
+   "name": "Tele/Data",
+   "floor": "3"
+  },
+  "310B": {
+   "node": "3-R009",
+   "name": "Office",
+   "floor": "3"
+  },
+  "310C": {
+   "node": "3-R010",
+   "name": "Office",
+   "floor": "3"
+  },
+  "310A": {
+   "node": "3-R012",
+   "name": "Office",
+   "floor": "3"
+  },
+  "306B": {
+   "node": "3-R014",
+   "name": "Storage",
+   "floor": "3"
+  },
+  "306A": {
+   "node": "3-R015",
+   "name": "Secure Storage",
+   "floor": "3"
+  },
+  "318A": {
+   "node": "3-R018",
+   "name": "Dept Head",
+   "floor": "3"
+  },
+  "T331": {
+   "node": "3-R033",
+   "name": "Terrace",
+   "floor": "3"
+  },
+  "T340": {
+   "node": "3-R042",
+   "name": "Main Terrace",
+   "floor": "3"
+  },
+  "344A": {
+   "node": "3-R047",
+   "name": "Dept Head",
+   "floor": "3"
+  },
+  "346A": {
+   "node": "3-R049",
+   "name": "Dept Head",
+   "floor": "3"
+  },
+  "354B": {
+   "node": "3-R053",
+   "name": "Parents Room",
+   "floor": "3"
+  },
+  "354A": {
+   "node": "3-R054",
+   "name": "Parents Room",
+   "floor": "3"
+  },
+  "358I": {
+   "node": "3-R057",
+   "name": "Emr",
+   "floor": "3"
+  },
+  "T363": {
+   "node": "3-R058",
+   "name": "Terrace",
+   "floor": "3"
+  },
+  "358G": {
+   "node": "3-R059",
+   "name": "Office",
+   "floor": "3"
+  },
+  "358F": {
+   "node": "3-R060",
+   "name": "Office",
+   "floor": "3"
+  },
+  "358E": {
+   "node": "3-R061",
+   "name": "Office",
+   "floor": "3"
+  },
+  "358D": {
+   "node": "3-R062",
+   "name": "Office",
+   "floor": "3"
+  },
+  "358C": {
+   "node": "3-R063",
+   "name": "Office",
+   "floor": "3"
+  },
+  "358B": {
+   "node": "3-R064",
+   "name": "Office",
+   "floor": "3"
+  },
+  "364A": {
+   "node": "3-R066",
+   "name": "Office",
+   "floor": "3"
+  },
+  "364B": {
+   "node": "3-R067",
+   "name": "Office",
+   "floor": "3"
+  },
+  "364C": {
+   "node": "3-R068",
+   "name": "Office",
+   "floor": "3"
+  },
+  "364D": {
+   "node": "3-R069",
+   "name": "Office",
+   "floor": "3"
+  },
+  "374E": {
+   "node": "3-R087",
+   "name": "Office",
+   "floor": "3"
+  },
+  "374D": {
+   "node": "3-R088",
+   "name": "Office",
+   "floor": "3"
+  },
+  "376D": {
+   "node": "3-R089",
+   "name": "Office",
+   "floor": "3"
+  },
+  "376B": {
+   "node": "3-R090",
+   "name": "Office",
+   "floor": "3"
+  },
+  "376E": {
+   "node": "3-R091",
+   "name": "Office",
+   "floor": "3"
+  },
+  "378D": {
+   "node": "3-R092",
+   "name": "Office",
+   "floor": "3"
+  },
+  "378E": {
+   "node": "3-R093",
+   "name": "Office",
+   "floor": "3"
+  },
+  "372B": {
+   "node": "3-R098",
+   "name": "Storage",
+   "floor": "3"
+  },
+  "372A": {
+   "node": "3-R099",
+   "name": "Storage",
+   "floor": "3"
+  },
+  "370E": {
+   "node": "3-R100",
+   "name": "Storage",
+   "floor": "3"
+  },
+  "372C": {
+   "node": "3-R101",
+   "name": "Elec",
+   "floor": "3"
+  },
+  "309B": {
+   "node": "3-R108",
+   "name": "Office",
+   "floor": "3"
+  },
+  "309A": {
+   "node": "3-R109",
+   "name": "Office",
+   "floor": "3"
+  },
+  "311A": {
+   "node": "3-R110",
+   "name": "Office",
+   "floor": "3"
+  },
+  "311B": {
+   "node": "3-R111",
+   "name": "Office",
+   "floor": "3"
+  },
+  "318B": {
+   "node": "3-R116",
+   "name": "Mtg Rm",
+   "floor": "3"
+  },
+  "376C": {
+   "node": "3-R120",
+   "name": "Storage",
+   "floor": "3"
+  },
+  "378A": {
+   "node": "3-R121",
+   "name": "Storage",
+   "floor": "3"
+  },
+  "374C": {
+   "node": "3-R129",
+   "name": "Storage",
+   "floor": "3"
+  },
+  "370A": {
+   "node": "3-R130",
+   "name": "Office",
+   "floor": "3"
+  },
+  "370B": {
+   "node": "3-R131",
+   "name": "Office",
+   "floor": "3"
+  },
+  "370C": {
+   "node": "3-R132",
+   "name": "Office",
+   "floor": "3"
+  },
+  "370D": {
+   "node": "3-R133",
+   "name": "Office",
+   "floor": "3"
+  },
+  "348A": {
+   "node": "3-R134",
+   "name": "Storage",
+   "floor": "3"
+  },
+  "309C": {
+   "node": "3-R135",
+   "name": "Closet",
+   "floor": "3"
+  },
+  "313A": {
+   "node": "3-R136",
+   "name": "Storage",
+   "floor": "3"
+  },
+  "308A": {
+   "node": "3-R137",
+   "name": "Ro/Di Closet",
+   "floor": "3"
+  },
+  "342A": {
+   "node": "3-R139",
+   "name": "Storage",
+   "floor": "3"
+  },
+  "358A": {
+   "node": "3-R140",
+   "name": "Storage",
+   "floor": "3"
+  },
+  "374B": {
+   "node": "3-R141",
+   "name": "Work",
+   "floor": "3"
+  },
+  "378B": {
+   "node": "3-R142",
+   "name": "Work",
+   "floor": "3"
+  }
+ },
+ "pois": [
+  {
+   "node": "3-R125",
+   "type": "restroom",
+   "name": "Women"
+  },
+  {
+   "node": "3-R126",
+   "type": "restroom",
+   "name": "Men"
+  },
+  {
+   "node": "3-R127",
+   "type": "restroom",
+   "name": "Men"
+  },
+  {
+   "node": "3-R128",
+   "type": "restroom",
+   "name": "Women"
+  },
+  {
+   "node": "3-S001",
+   "type": "stairs",
+   "name": "Stair 4"
+  },
+  {
+   "node": "3-S002",
+   "type": "stairs",
+   "name": "Stair 1"
+  },
+  {
+   "node": "3-S003",
+   "type": "stairs",
+   "name": "Stair 2"
+  },
+  {
+   "node": "3-E001",
+   "type": "elevator",
+   "name": "Elevator Two"
+  },
+  {
+   "node": "3-E002",
+   "type": "elevator",
+   "name": "Elevator One"
+  },
+  {
+   "node": "3-E003",
+   "type": "elevator",
+   "name": "Elevator Three"
+  }
+ ],
+ "nodes": [
+  {"id":"3-C001","floor":"3","x":8.75,"y":21.43,"type":"corridor"},
+  {"id":"3-C002","floor":"3","x":-46.61,"y":21.61,"type":"corridor"},
+  {"id":"3-C003","floor":"3","x":18.16,"y":21.61,"type":"corridor"},
+  {"id":"3-C004","floor":"3","x":18.37,"y":26.12,"type":"corridor"},
+  {"id":"3-C005","floor":"3","x":26.4,"y":21.54,"type":"corridor"},
+  {"id":"3-C006","floor":"3","x":26.4,"y":26.19,"type":"corridor"},
+  {"id":"3-C007","floor":"3","x":30.14,"y":26.19,"type":"corridor"},
+  {"id":"3-C008","floor":"3","x":30.21,"y":21.4,"type":"corridor"},
+  {"id":"3-C009","floor":"3","x":40.15,"y":21.4,"type":"corridor"},
+  {"id":"3-C010","floor":"3","x":39.79,"y":27.6,"type":"corridor"},
+  {"id":"3-C011","floor":"3","x":39.72,"y":32.81,"type":"corridor"},
+  {"id":"3-C012","floor":"3","x":45.85,"y":33.03,"type":"corridor"},
+  {"id":"3-C013","floor":"3","x":49.45,"y":33.03,"type":"corridor"},
+  {"id":"3-C014","floor":"3","x":45.93,"y":27.95,"type":"corridor"},
+  {"id":"3-C015","floor":"3","x":48.39,"y":21.61,"type":"corridor"},
+  {"id":"3-C016","floor":"3","x":40.29,"y":-1.58,"type":"corridor"},
+  {"id":"3-C017","floor":"3","x":48.46,"y":-1.51,"type":"corridor"},
+  {"id":"3-C018","floor":"3","x":8.64,"y":-1.37,"type":"corridor"},
+  {"id":"3-C019","floor":"3","x":40.29,"y":-12.78,"type":"corridor"},
+  {"id":"3-C020","floor":"3","x":46.07,"y":-12.71,"type":"corridor"},
+  {"id":"3-C021","floor":"3","x":28.16,"y":-1.86,"type":"corridor"},
+  {"id":"3-C022","floor":"3","x":28.16,"y":-6.79,"type":"corridor"},
+  {"id":"3-C023","floor":"3","x":8.01,"y":-2.42,"type":"corridor"},
+  {"id":"3-C024","floor":"3","x":8.01,"y":-7.15,"type":"corridor"},
+  {"id":"3-D001","floor":"3","x":6.32,"y":13.71,"type":"door"},
+  {"id":"3-D002","floor":"3","x":3.57,"y":19.78,"type":"door"},
+  {"id":"3-D003","floor":"3","x":0.96,"y":19.71,"type":"door"},
+  {"id":"3-D004","floor":"3","x":-0.94,"y":19,"type":"door"},
+  {"id":"3-D005","floor":"3","x":-12.85,"y":19.21,"type":"door"},
+  {"id":"3-D006","floor":"3","x":-19.97,"y":18.93,"type":"door"},
+  {"id":"3-D007","floor":"3","x":-22.23,"y":19.21,"type":"door"},
+  {"id":"3-D008","floor":"3","x":-21.73,"y":14.56,"type":"door"},
+  {"id":"3-D009","floor":"3","x":-20.25,"y":14.63,"type":"door"},
+  {"id":"3-D010","floor":"3","x":-24.9,"y":18.93,"type":"door"},
+  {"id":"3-D011","floor":"3","x":-24.9,"y":15.41,"type":"door"},
+  {"id":"3-D012","floor":"3","x":-27.86,"y":15.34,"type":"door"},
+  {"id":"3-D013","floor":"3","x":-40.62,"y":19.14,"type":"door"},
+  {"id":"3-D014","floor":"3","x":-42.88,"y":18.93,"type":"door"},
+  {"id":"3-D015","floor":"3","x":-43.3,"y":22.81,"type":"door"},
+  {"id":"3-D016","floor":"3","x":-30.82,"y":22.81,"type":"door"},
+  {"id":"3-D017","floor":"3","x":-24.9,"y":23.86,"type":"door"},
+  {"id":"3-D018","floor":"3","x":-25.96,"y":28.94,"type":"door"},
+  {"id":"3-D019","floor":"3","x":-28.08,"y":28.94,"type":"door"},
+  {"id":"3-D020","floor":"3","x":-26.67,"y":26.12,"type":"door"},
+  {"id":"3-D021","floor":"3","x":-22.3,"y":23.51,"type":"door"},
+  {"id":"3-D022","floor":"3","x":-13.56,"y":22.59,"type":"door"},
+  {"id":"3-D023","floor":"3","x":-12.01,"y":24.22,"type":"door"},
+  {"id":"3-D024","floor":"3","x":-5.1,"y":23.65,"type":"door"},
+  {"id":"3-D025","floor":"3","x":-1.29,"y":23.58,"type":"door"},
+  {"id":"3-D026","floor":"3","x":10.69,"y":23.23,"type":"door"},
+  {"id":"3-D027","floor":"3","x":18.09,"y":27.32,"type":"door"},
+  {"id":"3-D028","floor":"3","x":19.28,"y":29.57,"type":"door"},
+  {"id":"3-D029","floor":"3","x":16.47,"y":34.08,"type":"door"},
+  {"id":"3-D030","floor":"3","x":13.51,"y":33.87,"type":"door"},
+  {"id":"3-D031","floor":"3","x":12.17,"y":34.01,"type":"door"},
+  {"id":"3-D032","floor":"3","x":9.7,"y":32.81,"type":"door"},
+  {"id":"3-D033","floor":"3","x":9.56,"y":31.4,"type":"door"},
+  {"id":"3-D034","floor":"3","x":13.65,"y":31.76,"type":"door"},
+  {"id":"3-D035","floor":"3","x":15.2,"y":31.76,"type":"door"},
+  {"id":"3-D036","floor":"3","x":24.64,"y":25.91,"type":"door"},
+  {"id":"3-D037","floor":"3","x":25.91,"y":28.3,"type":"door"},
+  {"id":"3-D038","floor":"3","x":29.36,"y":28.23,"type":"door"},
+  {"id":"3-D039","floor":"3","x":30.56,"y":28.23,"type":"door"},
+  {"id":"3-D040","floor":"3","x":31.48,"y":26.05,"type":"door"},
+  {"id":"3-D041","floor":"3","x":38.81,"y":27.46,"type":"door"},
+  {"id":"3-D043","floor":"3","x":38.88,"y":29.15,"type":"door"},
+  {"id":"3-D044","floor":"3","x":40.78,"y":29.43,"type":"door"},
+  {"id":"3-D045","floor":"3","x":37.75,"y":31.97,"type":"door"},
+  {"id":"3-D046","floor":"3","x":37.05,"y":33.1,"type":"door"},
+  {"id":"3-D047","floor":"3","x":37.96,"y":33.94,"type":"door"},
+  {"id":"3-D048","floor":"3","x":42.97,"y":34.15,"type":"door"},
+  {"id":"3-D049","floor":"3","x":44.52,"y":33.8,"type":"door"},
+  {"id":"3-D050","floor":"3","x":49.66,"y":34.15,"type":"door"},
+  {"id":"3-D051","floor":"3","x":47.05,"y":30.07,"type":"door"},
+  {"id":"3-D052","floor":"3","x":47.12,"y":28.87,"type":"door"},
+  {"id":"3-D053","floor":"3","x":48.74,"y":23.09,"type":"door"},
+  {"id":"3-D054","floor":"3","x":50.29,"y":20.69,"type":"door"},
+  {"id":"3-D055","floor":"3","x":47.62,"y":18.86,"type":"door"},
+  {"id":"3-D056","floor":"3","x":45.08,"y":20.13,"type":"door"},
+  {"id":"3-D057","floor":"3","x":42.82,"y":19.35,"type":"door"},
+  {"id":"3-D058","floor":"3","x":46.21,"y":15.9,"type":"door"},
+  {"id":"3-D059","floor":"3","x":41.84,"y":13.57,"type":"door"},
+  {"id":"3-D060","floor":"3","x":38.74,"y":19,"type":"door"},
+  {"id":"3-D061","floor":"3","x":38.88,"y":15.05,"type":"door"},
+  {"id":"3-D062","floor":"3","x":38.74,"y":13.36,"type":"door"},
+  {"id":"3-D063","floor":"3","x":38.81,"y":9.49,"type":"door"},
+  {"id":"3-D064","floor":"3","x":38.88,"y":7.87,"type":"door"},
+  {"id":"3-D065","floor":"3","x":38.88,"y":3.85,"type":"door"},
+  {"id":"3-D066","floor":"3","x":41.77,"y":6.03,"type":"door"},
+  {"id":"3-D067","floor":"3","x":44.94,"y":-0.24,"type":"door"},
+  {"id":"3-D068","floor":"3","x":42.75,"y":0.75,"type":"door"},
+  {"id":"3-D069","floor":"3","x":47.76,"y":0.47,"type":"door"},
+  {"id":"3-D070","floor":"3","x":46.35,"y":3.64,"type":"door"},
+  {"id":"3-D071","floor":"3","x":45.93,"y":7.37,"type":"door"},
+  {"id":"3-D072","floor":"3","x":46.07,"y":12.31,"type":"door"},
+  {"id":"3-D073","floor":"3","x":50.37,"y":-1.01,"type":"door"},
+  {"id":"3-D074","floor":"3","x":49.59,"y":-4.05,"type":"door"},
+  {"id":"3-D075","floor":"3","x":46.49,"y":-4.05,"type":"door"},
+  {"id":"3-D076","floor":"3","x":41.49,"y":-5.95,"type":"door"},
+  {"id":"3-D077","floor":"3","x":38.95,"y":-5.81,"type":"door"},
+  {"id":"3-D078","floor":"3","x":39.02,"y":-7.5,"type":"door"},
+  {"id":"3-D079","floor":"3","x":38.24,"y":-11.16,"type":"door"},
+  {"id":"3-D080","floor":"3","x":36.9,"y":-13.14,"type":"door"},
+  {"id":"3-D081","floor":"3","x":37.89,"y":-14.69,"type":"door"},
+  {"id":"3-D082","floor":"3","x":43.25,"y":-14.62,"type":"door"},
+  {"id":"3-D083","floor":"3","x":44.23,"y":-14.62,"type":"door"},
+  {"id":"3-D084","floor":"3","x":47.55,"y":-13.21,"type":"door"},
+  {"id":"3-D085","floor":"3","x":47.62,"y":-10.39,"type":"door"},
+  {"id":"3-D086","floor":"3","x":46.28,"y":-9.47,"type":"door"},
+  {"id":"3-D087","floor":"3","x":44.09,"y":-10.95,"type":"door"},
+  {"id":"3-D088","floor":"3","x":37.47,"y":-0.17,"type":"door"},
+  {"id":"3-D089","floor":"3","x":36.13,"y":-0.38,"type":"door"},
+  {"id":"3-D090","floor":"3","x":31.9,"y":-0.38,"type":"door"},
+  {"id":"3-D091","floor":"3","x":30,"y":-0.24,"type":"door"},
+  {"id":"3-D092","floor":"3","x":26.19,"y":-0.31,"type":"door"},
+  {"id":"3-D093","floor":"3","x":24.5,"y":-0.17,"type":"door"},
+  {"id":"3-D094","floor":"3","x":20.06,"y":-0.24,"type":"door"},
+  {"id":"3-D095","floor":"3","x":15.97,"y":-0.66,"type":"door"},
+  {"id":"3-D096","floor":"3","x":14.28,"y":-0.52,"type":"door"},
+  {"id":"3-D097","floor":"3","x":10.33,"y":-2.85,"type":"door"},
+  {"id":"3-D098","floor":"3","x":17.31,"y":-3.34,"type":"door"},
+  {"id":"3-D099","floor":"3","x":17.31,"y":-10.81,"type":"door"},
+  {"id":"3-D100","floor":"3","x":26.54,"y":-3.41,"type":"door"},
+  {"id":"3-D101","floor":"3","x":29.72,"y":-3.41,"type":"door"},
+  {"id":"3-D102","floor":"3","x":30.7,"y":-6.65,"type":"door"},
+  {"id":"3-D103","floor":"3","x":28.66,"y":-8.27,"type":"door"},
+  {"id":"3-D104","floor":"3","x":27.39,"y":-8.13,"type":"door"},
+  {"id":"3-D105","floor":"3","x":25.63,"y":-6.65,"type":"door"},
+  {"id":"3-D106","floor":"3","x":6.67,"y":-3.97,"type":"door"},
+  {"id":"3-D107","floor":"3","x":6.67,"y":-6.79,"type":"door"},
+  {"id":"3-D108","floor":"3","x":7.8,"y":-8.77,"type":"door"},
+  {"id":"3-D109","floor":"3","x":6.53,"y":-10.88,"type":"door"},
+  {"id":"3-D110","floor":"3","x":11.53,"y":-14.48,"type":"door"},
+  {"id":"3-D111","floor":"3","x":13.01,"y":-14.41,"type":"door"},
+  {"id":"3-D112","floor":"3","x":17.52,"y":-14.48,"type":"door"},
+  {"id":"3-D113","floor":"3","x":19.07,"y":-14.48,"type":"door"},
+  {"id":"3-D114","floor":"3","x":5.82,"y":-1.79,"type":"door"},
+  {"id":"3-D115","floor":"3","x":11.88,"y":4.41,"type":"door"},
+  {"id":"3-D116","floor":"3","x":17.88,"y":5.05,"type":"door"},
+  {"id":"3-D117","floor":"3","x":17.8,"y":6.53,"type":"door"},
+  {"id":"3-D118","floor":"3","x":15.97,"y":7.23,"type":"door"},
+  {"id":"3-D119","floor":"3","x":11.67,"y":12.94,"type":"door"},
+  {"id":"3-D120","floor":"3","x":17.73,"y":11.95,"type":"door"},
+  {"id":"3-D121","floor":"3","x":17.73,"y":10.61,"type":"door"},
+  {"id":"3-D122","floor":"3","x":15.83,"y":9.91,"type":"door"},
+  {"id":"3-D123","floor":"3","x":14.84,"y":10.9,"type":"door"},
+  {"id":"3-D124","floor":"3","x":11.74,"y":18.37,"type":"door"},
+  {"id":"3-D125","floor":"3","x":15.83,"y":15.69,"type":"door"},
+  {"id":"3-D126","floor":"3","x":17.66,"y":17.66,"type":"door"},
+  {"id":"3-D127","floor":"3","x":17.73,"y":16.25,"type":"door"},
+  {"id":"3-D128","floor":"3","x":5.47,"y":6.88,"type":"door"},
+  {"id":"3-D129","floor":"3","x":5.54,"y":9.2,"type":"door"},
+  {"id":"3-D130","floor":"3","x":4.56,"y":8.01,"type":"door"},
+  {"id":"3-R001","floor":"3","x":-5.31,"y":15.34,"type":"room","room":"305","name":"Rfid Lab"},
+  {"id":"3-C025","floor":"3","x":-0.86,"y":21.46,"type":"corridor"},
+  {"id":"3-C026","floor":"3","x":-5.1,"y":21.47,"type":"corridor"},
+  {"id":"3-C027","floor":"3","x":-12.96,"y":21.5,"type":"corridor"},
+  {"id":"3-C028","floor":"3","x":-22.44,"y":21.53,"type":"corridor"},
+  {"id":"3-C029","floor":"3","x":-25.02,"y":21.54,"type":"corridor"},
+  {"id":"3-C030","floor":"3","x":-30.72,"y":21.56,"type":"corridor"},
+  {"id":"3-C031","floor":"3","x":-41.97,"y":21.6,"type":"corridor"},
+  {"id":"3-C032","floor":"3","x":2.28,"y":21.45,"type":"corridor"},
+  {"id":"3-C039","floor":"3","x":10.82,"y":21.47,"type":"corridor"},
+  {"id":"3-C040","floor":"3","x":8.74,"y":18.34,"type":"corridor"},
+  {"id":"3-C041","floor":"3","x":8.71,"y":13.3,"type":"corridor"},
+  {"id":"3-R007","floor":"3","x":-42.06,"y":27.13,"type":"room","room":"314","name":"Distance Education"},
+  {"id":"3-R008","floor":"3","x":-34.29,"y":27.32,"type":"room","room":"312","name":"Distance Education"},
+  {"id":"3-R009","floor":"3","x":-28.38,"y":31.01,"type":"room","room":"310B","name":"Office"},
+  {"id":"3-R010","floor":"3","x":-25.51,"y":31.11,"type":"room","room":"310C","name":"Office"},
+  {"id":"3-R012","floor":"3","x":-28.01,"y":24.91,"type":"room","room":"310A","name":"Office"},
+  {"id":"3-R013","floor":"3","x":-19.42,"y":26.95,"type":"room","room":"308","name":"Flex Wet Clean Instructional"},
+  {"id":"3-R014","floor":"3","x":-13.22,"y":29.63,"type":"room","room":"306B","name":"Storage"},
+  {"id":"3-R015","floor":"3","x":-13.32,"y":24.91,"type":"room","room":"306A","name":"Secure Storage"},
+  {"id":"3-R016","floor":"3","x":-7.5,"y":28.33,"type":"room","room":"306","name":"Flex Wet Clean Instructional"},
+  {"id":"3-R017","floor":"3","x":1.28,"y":27.13,"type":"room","room":"304","name":"Flex Wet Clean Instructional"},
+  {"id":"3-R018","floor":"3","x":8.12,"y":29.9,"type":"room","room":"318A","name":"Dept Head"},
+  {"id":"3-R019","floor":"3","x":8.12,"y":35.26,"type":"room","room":"319","name":"Office"},
+  {"id":"3-R020","floor":"3","x":11.26,"y":35.54,"type":"room","room":"320","name":"Office"},
+  {"id":"3-R021","floor":"3","x":14.31,"y":35.54,"type":"room","room":"321","name":"Office"},
+  {"id":"3-R022","floor":"3","x":17.55,"y":35.45,"type":"room","room":"322","name":"Office"},
+  {"id":"3-R023","floor":"3","x":13.93,"y":32.75,"type":"room","room":"317","name":"Electrical & Computer Engineering Suite"},
+  {"id":"3-R024","floor":"3","x":21.14,"y":29.22,"type":"room","room":"323","name":"Office"},
+  {"id":"3-R025","floor":"3","x":24.9,"y":29.22,"type":"room","room":"325","name":"Office"},
+  {"id":"3-R026","floor":"3","x":27.63,"y":29.22,"type":"room","room":"326","name":"Office"},
+  {"id":"3-R027","floor":"3","x":32.2,"y":29.14,"type":"room","room":"327","name":"Office"},
+  {"id":"3-R028","floor":"3","x":36.12,"y":29.22,"type":"room","room":"330","name":"Office"},
+  {"id":"3-R029","floor":"3","x":22.1,"y":25.16,"type":"room","room":"324","name":"Grad/Phd/Tech"},
+  {"id":"3-R030","floor":"3","x":34.05,"y":24.64,"type":"room","room":"328","name":"Graduate Lounge"},
+  {"id":"3-R031","floor":"3","x":37.14,"y":27.44,"type":"room","room":"329","name":"Storage"},
+  {"id":"3-R032","floor":"3","x":37.94,"y":31.28,"type":"room","room":"332","name":"Storage"},
+  {"id":"3-R033","floor":"3","x":28.7,"y":34.4,"type":"room","room":"T331","name":"Terrace"},
+  {"id":"3-R034","floor":"3","x":39.3,"y":35.41,"type":"room","room":"333","name":"Office"},
+  {"id":"3-R035","floor":"3","x":42.17,"y":35.51,"type":"room","room":"334","name":"Office"},
+  {"id":"3-R036","floor":"3","x":45.23,"y":35.56,"type":"room","room":"335","name":"Office"},
+  {"id":"3-R037","floor":"3","x":48.67,"y":35.6,"type":"room","room":"336","name":"Office"},
+  {"id":"3-R038","floor":"3","x":48.57,"y":30.85,"type":"room","room":"337","name":"Office"},
+  {"id":"3-R039","floor":"3","x":48.76,"y":28.07,"type":"room","room":"338","name":"Office"},
+  {"id":"3-R040","floor":"3","x":42.88,"y":30.24,"type":"room","room":"331","name":"Mtg Rm"},
+  {"id":"3-R041","floor":"3","x":45.84,"y":24.83,"type":"room","room":"339","name":"Green Roof Laboratory"},
+  {"id":"3-R042","floor":"3","x":54.28,"y":10.04,"type":"room","room":"T340","name":"Main Terrace"},
+  {"id":"3-R043","floor":"3","x":48.87,"y":17.76,"type":"room","room":"340","name":"Office"},
+  {"id":"3-R044","floor":"3","x":48.45,"y":14.51,"type":"room","room":"341","name":"Office"},
+  {"id":"3-R045","floor":"3","x":44.35,"y":17.62,"type":"room","room":"342","name":"Mtg Rm"},
+  {"id":"3-R046","floor":"3","x":43.6,"y":12.3,"type":"room","room":"344","name":"Dept. Office"},
+  {"id":"3-R047","floor":"3","x":48.17,"y":11.27,"type":"room","room":"344A","name":"Dept Head"},
+  {"id":"3-R048","floor":"3","x":43.56,"y":7.55,"type":"room","room":"346","name":"Dept. Office"},
+  {"id":"3-R049","floor":"3","x":47.93,"y":7.93,"type":"room","room":"346A","name":"Dept Head"},
+  {"id":"3-R050","floor":"3","x":47.93,"y":5.06,"type":"room","room":"350","name":"Office"},
+  {"id":"3-R051","floor":"3","x":44.12,"y":2.19,"type":"room","room":"348","name":"Mtg Rm"},
+  {"id":"3-R052","floor":"3","x":48.68,"y":1.67,"type":"room","room":"352","name":"Office"},
+  {"id":"3-R053","floor":"3","x":48.97,"y":-5.3,"type":"room","room":"354B","name":"Parents Room"},
+  {"id":"3-R054","floor":"3","x":46.75,"y":-5.34,"type":"room","room":"354A","name":"Parents Room"},
+  {"id":"3-R057","floor":"3","x":38.05,"y":-9.72,"type":"room","room":"358I","name":"Emr"},
+  {"id":"3-R058","floor":"3","x":29.58,"y":-12.78,"type":"room","room":"T363","name":"Terrace"},
+  {"id":"3-R059","floor":"3","x":38.52,"y":-16.21,"type":"room","room":"358G","name":"Office"},
+  {"id":"3-R060","floor":"3","x":42.19,"y":-16.12,"type":"room","room":"358F","name":"Office"},
+  {"id":"3-R061","floor":"3","x":45.39,"y":-15.98,"type":"room","room":"358E","name":"Office"},
+  {"id":"3-R062","floor":"3","x":48.87,"y":-15.13,"type":"room","room":"358D","name":"Office"},
+  {"id":"3-R063","floor":"3","x":49.06,"y":-11.18,"type":"room","room":"358C","name":"Office"},
+  {"id":"3-R064","floor":"3","x":48.21,"y":-8.02,"type":"room","room":"358B","name":"Office"},
+  {"id":"3-R065","floor":"3","x":31.75,"y":-4.45,"type":"room","room":"362","name":"Grad/Phd/Tech"},
+  {"id":"3-R066","floor":"3","x":32.55,"y":-8.54,"type":"room","room":"364A","name":"Office"},
+  {"id":"3-R067","floor":"3","x":29.63,"y":-9.44,"type":"room","room":"364B","name":"Office"},
+  {"id":"3-R068","floor":"3","x":26.76,"y":-9.39,"type":"room","room":"364C","name":"Office"},
+  {"id":"3-R069","floor":"3","x":23.79,"y":-8.49,"type":"room","room":"364D","name":"Office"},
+  {"id":"3-R070","floor":"3","x":24.97,"y":-4.59,"type":"room","room":"366","name":"Grad/Phd/Tech"},
+  {"id":"3-R071","floor":"3","x":36.92,"y":18.61,"type":"room","room":"343","name":"Office"},
+  {"id":"3-R072","floor":"3","x":36.97,"y":15.88,"type":"room","room":"345","name":"Office"},
+  {"id":"3-R073","floor":"3","x":37.25,"y":12.87,"type":"room","room":"347","name":"Office"},
+  {"id":"3-R074","floor":"3","x":37.02,"y":10.09,"type":"room","room":"349","name":"Office"},
+  {"id":"3-R075","floor":"3","x":36.87,"y":7.22,"type":"room","room":"351","name":"Office"},
+  {"id":"3-R076","floor":"3","x":36.97,"y":4.35,"type":"room","room":"353","name":"Office"},
+  {"id":"3-R077","floor":"3","x":37.81,"y":1.53,"type":"room","room":"357","name":"Copy Room"},
+  {"id":"3-R078","floor":"3","x":35.13,"y":1.48,"type":"room","room":"359","name":"Office"},
+  {"id":"3-R079","floor":"3","x":32.4,"y":1.34,"type":"room","room":"361","name":"Office"},
+  {"id":"3-R080","floor":"3","x":29.39,"y":1.34,"type":"room","room":"363","name":"Office"},
+  {"id":"3-R081","floor":"3","x":26.81,"y":1.43,"type":"room","room":"365","name":"Office"},
+  {"id":"3-R082","floor":"3","x":24.12,"y":1.43,"type":"room","room":"367","name":"Office"},
+  {"id":"3-R083","floor":"3","x":20.97,"y":1.24,"type":"room","room":"369","name":"Office"},
+  {"id":"3-R084","floor":"3","x":16.88,"y":1.67,"type":"room","room":"371","name":"Elec"},
+  {"id":"3-R085","floor":"3","x":13.21,"y":1.62,"type":"room","room":"373","name":"Tele/Data"},
+  {"id":"3-R086","floor":"3","x":15.04,"y":4.58,"type":"room","room":"374","name":"Grad/Phd/Tech"},
+  {"id":"3-R087","floor":"3","x":19.47,"y":4.35,"type":"room","room":"374E","name":"Office"},
+  {"id":"3-R088","floor":"3","x":19.32,"y":7.17,"type":"room","room":"374D","name":"Office"},
+  {"id":"3-R089","floor":"3","x":19.32,"y":10.09,"type":"room","room":"376D","name":"Office"},
+  {"id":"3-R090","floor":"3","x":13.58,"y":10.14,"type":"room","room":"376B","name":"Office"},
+  {"id":"3-R091","floor":"3","x":19.42,"y":12.72,"type":"room","room":"376E","name":"Office"},
+  {"id":"3-R092","floor":"3","x":19.28,"y":15.74,"type":"room","room":"378D","name":"Office"},
+  {"id":"3-R093","floor":"3","x":19.28,"y":18.46,"type":"room","room":"378E","name":"Office"},
+  {"id":"3-R094","floor":"3","x":15.18,"y":18.37,"type":"room","room":"378","name":"Grad/Phd/Tech"},
+  {"id":"3-R095","floor":"3","x":16.31,"y":12.77,"type":"room","room":"376","name":"Grad/Phd/Tech"},
+  {"id":"3-R096","floor":"3","x":17.05,"y":-7.05,"type":"room","room":"368","name":"Grad/Phd/Tech"},
+  {"id":"3-R097","floor":"3","x":18.01,"y":-12.46,"type":"room","room":"370","name":"Mechanical Engineering Suite"},
+  {"id":"3-R098","floor":"3","x":5.95,"y":-6.83,"type":"room","room":"372B","name":"Storage"},
+  {"id":"3-R099","floor":"3","x":5.99,"y":-3.94,"type":"room","room":"372A","name":"Storage"},
+  {"id":"3-R100","floor":"3","x":5.87,"y":-10.74,"type":"room","room":"370E","name":"Storage"},
+  {"id":"3-R101","floor":"3","x":10.23,"y":-3.64,"type":"room","room":"372C","name":"Elec"},
+  {"id":"3-R104","floor":"3","x":2.65,"y":8.04,"type":"room","room":"383","name":"Plumbing"},
+  {"id":"3-R105","floor":"3","x":3.17,"y":-1.65,"type":"room","room":"372","name":"Mechanical"},
+  {"id":"3-R106","floor":"3","x":-14.44,"y":16.09,"type":"room","room":"307","name":"Cyber Physical/Systems Security"},
+  {"id":"3-R108","floor":"3","x":-22.63,"y":12.79,"type":"room","room":"309B","name":"Office"},
+  {"id":"3-R109","floor":"3","x":-18.98,"y":13.03,"type":"room","room":"309A","name":"Office"},
+  {"id":"3-R110","floor":"3","x":-25.52,"y":13.5,"type":"room","room":"311A","name":"Office"},
+  {"id":"3-R111","floor":"3","x":-28.82,"y":13.5,"type":"room","room":"311B","name":"Office"},
+  {"id":"3-R113","floor":"3","x":-41.84,"y":15.62,"type":"room","room":"315","name":"Student Research"},
+  {"id":"3-R114","floor":"3","x":8.77,"y":25.44,"type":"room","room":"316","name":"Staff Lounge"},
+  {"id":"3-R115","floor":"3","x":12.41,"y":30.4,"type":"room","room":"318","name":"Dept. Office"},
+  {"id":"3-R116","floor":"3","x":16.05,"y":30.21,"type":"room","room":"318B","name":"Mtg Rm"},
+  {"id":"3-C044","floor":"3","x":39.77,"y":29.23,"type":"corridor"},
+  {"id":"3-C045","floor":"3","x":43.84,"y":32.96,"type":"corridor"},
+  {"id":"3-C046","floor":"3","x":45.9,"y":29.56,"type":"corridor"},
+  {"id":"3-C047","floor":"3","x":38.16,"y":32.94,"type":"corridor"},
+  {"id":"3-C048","floor":"3","x":46.69,"y":18.81,"type":"corridor"},
+  {"id":"3-C049","floor":"3","x":46.57,"y":21.56,"type":"corridor"},
+  {"id":"3-C050","floor":"3","x":40.16,"y":19.05,"type":"corridor"},
+  {"id":"3-C051","floor":"3","x":40.19,"y":14.23,"type":"corridor"},
+  {"id":"3-C052","floor":"3","x":40.22,"y":8.75,"type":"corridor"},
+  {"id":"3-C053","floor":"3","x":40.24,"y":6.04,"type":"corridor"},
+  {"id":"3-P001","floor":"3","x":18.23,"y":32.7,"type":"space"},
+  {"id":"3-P002","floor":"3","x":18.38,"y":29.49,"type":"space"},
+  {"id":"3-D131","floor":"3","x":-15.05,"y":30.07,"type":"door"},
+  {"id":"3-D132","floor":"3","x":-11.99,"y":29.95,"type":"door"},
+  {"id":"3-P003","floor":"3","x":-25.13,"y":27.28,"type":"space"},
+  {"id":"3-R117","floor":"3","x":-26.99,"y":27.37,"type":"room","room":"310","name":"Finance & Admin"},
+  {"id":"3-R118","floor":"3","x":-26.46,"y":17.26,"type":"room","room":"311","name":"Staff Offices (Research, Seed, And F&A Staff)"},
+  {"id":"3-R119","floor":"3","x":-20.83,"y":17.04,"type":"room","room":"309","name":"External Relations"},
+  {"id":"3-R120","floor":"3","x":16.35,"y":9.22,"type":"room","room":"376C","name":"Storage"},
+  {"id":"3-R121","floor":"3","x":16.2,"y":14.88,"type":"room","room":"378A","name":"Storage"},
+  {"id":"3-R122","floor":"3","x":4.34,"y":13.85,"type":"room","room":"387","name":"Tele/Data"},
+  {"id":"3-R123","floor":"3","x":1.24,"y":15.9,"type":"room","room":"301","name":"Elec"},
+  {"id":"3-R124","floor":"3","x":3.57,"y":18.46,"type":"room","room":"300","name":"Housekeeping"},
+  {"id":"3-R125","floor":"3","x":5.39,"y":10.77,"type":"restroom","room":"385","name":"Women"},
+  {"id":"3-R126","floor":"3","x":5.45,"y":5.47,"type":"restroom","room":"381","name":"Men"},
+  {"id":"3-R127","floor":"3","x":38.31,"y":-4.35,"type":"restroom","room":"360","name":"Men"},
+  {"id":"3-R128","floor":"3","x":42.06,"y":-4.42,"type":"restroom","room":"356","name":"Women"},
+  {"id":"3-C054","floor":"3","x":8.69,"y":8.1,"type":"corridor"},
+  {"id":"3-C055","floor":"3","x":5.94,"y":8.16,"type":"corridor"},
+  {"id":"3-C056","floor":"3","x":8.67,"y":4.56,"type":"corridor"},
+  {"id":"3-R129","floor":"3","x":16.21,"y":7.99,"type":"room","room":"374C","name":"Storage"},
+  {"id":"3-C057","floor":"3","x":15.16,"y":-1.53,"type":"corridor"},
+  {"id":"3-C058","floor":"3","x":17.24,"y":-1.58,"type":"corridor"},
+  {"id":"3-C059","floor":"3","x":20.32,"y":-1.66,"type":"corridor"},
+  {"id":"3-C060","floor":"3","x":24.9,"y":-1.78,"type":"corridor"},
+  {"id":"3-C061","floor":"3","x":8.01,"y":-4.1,"type":"corridor"},
+  {"id":"3-R130","floor":"3","x":19.92,"y":-15.75,"type":"room","room":"370A","name":"Office"},
+  {"id":"3-R131","floor":"3","x":16.8,"y":-15.85,"type":"room","room":"370B","name":"Office"},
+  {"id":"3-R132","floor":"3","x":13.93,"y":-15.98,"type":"room","room":"370C","name":"Office"},
+  {"id":"3-R133","floor":"3","x":10.79,"y":-15.98,"type":"room","room":"370D","name":"Office"},
+  {"id":"3-P004","floor":"3","x":7.96,"y":-11.29,"type":"space"},
+  {"id":"3-P005","floor":"3","x":12.31,"y":-12.48,"type":"space"},
+  {"id":"3-C062","floor":"3","x":30.93,"y":-1.8,"type":"corridor"},
+  {"id":"3-C063","floor":"3","x":36.96,"y":-1.66,"type":"corridor"},
+  {"id":"3-C064","floor":"3","x":40.29,"y":-6.85,"type":"corridor"},
+  {"id":"3-C065","floor":"3","x":38.74,"y":-12.85,"type":"corridor"},
+  {"id":"3-C066","floor":"3","x":43.71,"y":-12.74,"type":"corridor"},
+  {"id":"3-P006","floor":"3","x":46.66,"y":1.88,"type":"space"},
+  {"id":"3-R134","floor":"3","x":41.94,"y":0.75,"type":"room","room":"348A","name":"Storage"},
+  {"id":"3-C067","floor":"3","x":44.96,"y":-1.54,"type":"corridor"},
+  {"id":"3-C068","floor":"3","x":46.78,"y":-1.52,"type":"corridor"},
+  {"id":"3-R135","floor":"3","x":-19.84,"y":19.57,"type":"room","room":"309C","name":"Closet"},
+  {"id":"3-R136","floor":"3","x":-42.82,"y":19.64,"type":"room","room":"313A","name":"Storage"},
+  {"id":"3-R137","floor":"3","x":-13.6,"y":23.19,"type":"room","room":"308A","name":"Ro/Di Closet"},
+  {"id":"3-R139","floor":"3","x":42.14,"y":19.34,"type":"room","room":"342A","name":"Storage"},
+  {"id":"3-S001","floor":"3","x":37.95,"y":-7.42,"type":"stairs","room":"3S4","name":"Stair 4"},
+  {"id":"3-R140","floor":"3","x":43.77,"y":-10.3,"type":"room","room":"358A","name":"Storage"},
+  {"id":"3-S002","floor":"3","x":4.89,"y":1.96,"type":"stairs","room":"3S1","name":"Stair 1"},
+  {"id":"3-S003","floor":"3","x":-46.6,"y":24.47,"type":"stairs","room":"3S2","name":"Stair 2"},
+  {"id":"3-D133","floor":"3","x":-46.34,"y":23.11,"type":"door"},
+  {"id":"3-D134","floor":"3","x":6.22,"y":2.09,"type":"door"},
+  {"id":"3-C069","floor":"3","x":8.66,"y":2.03,"type":"corridor"},
+  {"id":"3-E001","floor":"3","x":6.29,"y":18.36,"type":"elevator","room":"3E1","name":"Elevator Two"},
+  {"id":"3-E002","floor":"3","x":6.24,"y":15.85,"type":"elevator","room":"3E2","name":"Elevator One"},
+  {"id":"3-E003","floor":"3","x":42.04,"y":-8.66,"type":"elevator","room":"3E3","name":"Elevator Three"},
+  {"id":"3-C070","floor":"3","x":40.29,"y":-8.72,"type":"corridor"},
+  {"id":"3-R141","floor":"3","x":13.51,"y":7.2,"type":"room","room":"374B","name":"Work"},
+  {"id":"3-R142","floor":"3","x":13.81,"y":15.92,"type":"room","room":"378B","name":"Work"}
+ ],
+ "edges": [
+  {"a":"3-C018","b":"3-C023","length":1.22,"kind":"corridor"},
+  {"a":"3-C003","b":"3-C004","length":4.51,"kind":"corridor"},
+  {"a":"3-C003","b":"3-C005","length":8.24,"kind":"corridor"},
+  {"a":"3-C005","b":"3-C008","length":3.81,"kind":"corridor"},
+  {"a":"3-C008","b":"3-C007","length":4.79,"kind":"corridor"},
+  {"a":"3-C007","b":"3-C006","length":3.74,"kind":"corridor"},
+  {"a":"3-C006","b":"3-C005","length":4.65,"kind":"corridor"},
+  {"a":"3-C008","b":"3-C009","length":9.94,"kind":"corridor"},
+  {"a":"3-C009","b":"3-C010","length":6.21,"kind":"corridor"},
+  {"a":"3-C014","b":"3-C010","length":6.15,"kind":"corridor"},
+  {"a":"3-C012","b":"3-C013","length":3.6,"kind":"corridor"},
+  {"a":"3-C021","b":"3-C022","length":4.93,"kind":"corridor"},
+  {"a":"3-R001","b":"3-D004","length":5.7,"kind":"room"},
+  {"a":"3-C025","b":"3-D004","length":2.46,"kind":"doorway"},
+  {"a":"3-C025","b":"3-C026","length":4.24,"kind":"corridor"},
+  {"a":"3-C026","b":"3-C027","length":7.86,"kind":"corridor"},
+  {"a":"3-C027","b":"3-C028","length":9.48,"kind":"corridor"},
+  {"a":"3-C028","b":"3-C029","length":2.58,"kind":"corridor"},
+  {"a":"3-C029","b":"3-C030","length":5.7,"kind":"corridor"},
+  {"a":"3-C030","b":"3-C031","length":11.25,"kind":"corridor"},
+  {"a":"3-C031","b":"3-C002","length":4.64,"kind":"corridor"},
+  {"a":"3-D015","b":"3-C031","length":1.8,"kind":"doorway"},
+  {"a":"3-C031","b":"3-D013","length":2.81,"kind":"doorway"},
+  {"a":"3-C030","b":"3-D016","length":1.25,"kind":"doorway"},
+  {"a":"3-C029","b":"3-D017","length":2.32,"kind":"doorway"},
+  {"a":"3-D010","b":"3-C029","length":2.61,"kind":"doorway"},
+  {"a":"3-C028","b":"3-D021","length":1.98,"kind":"doorway"},
+  {"a":"3-D007","b":"3-C028","length":2.33,"kind":"doorway"},
+  {"a":"3-C027","b":"3-D022","length":1.24,"kind":"doorway"},
+  {"a":"3-D005","b":"3-C027","length":2.29,"kind":"doorway"},
+  {"a":"3-D024","b":"3-C026","length":2.18,"kind":"doorway"},
+  {"a":"3-D025","b":"3-C025","length":2.16,"kind":"doorway"},
+  {"a":"3-C001","b":"3-C032","length":6.47,"kind":"corridor"},
+  {"a":"3-C032","b":"3-C025","length":3.14,"kind":"corridor"},
+  {"a":"3-D003","b":"3-C032","length":2.18,"kind":"doorway"},
+  {"a":"3-C032","b":"3-D002","length":2.11,"kind":"doorway"},
+  {"a":"3-C004","b":"3-D027","length":1.23,"kind":"doorway"},
+  {"a":"3-C001","b":"3-C039","length":2.07,"kind":"corridor"},
+  {"a":"3-C039","b":"3-C003","length":7.34,"kind":"corridor"},
+  {"a":"3-C039","b":"3-D026","length":1.76,"kind":"doorway"},
+  {"a":"3-C001","b":"3-C040","length":3.09,"kind":"corridor"},
+  {"a":"3-C040","b":"3-C041","length":5.04,"kind":"corridor"},
+  {"a":"3-D001","b":"3-C041","length":2.42,"kind":"doorway"},
+  {"a":"3-C041","b":"3-D119","length":2.98,"kind":"doorway"},
+  {"a":"3-D124","b":"3-C040","length":3,"kind":"doorway"},
+  {"a":"3-R007","b":"3-D015","length":4.49,"kind":"room"},
+  {"a":"3-R008","b":"3-D016","length":5.69,"kind":"room"},
+  {"a":"3-D013","b":"3-R113","length":3.73,"kind":"room"},
+  {"a":"3-R113","b":"3-D014","length":3.47,"kind":"room"},
+  {"a":"3-D020","b":"3-R012","length":1.81,"kind":"room"},
+  {"a":"3-D019","b":"3-R009","length":2.09,"kind":"room"},
+  {"a":"3-D018","b":"3-R010","length":2.22,"kind":"room"},
+  {"a":"3-D021","b":"3-R013","length":4.49,"kind":"room"},
+  {"a":"3-D024","b":"3-R016","length":5.26,"kind":"room"},
+  {"a":"3-R016","b":"3-D023","length":6.1,"kind":"room"},
+  {"a":"3-D023","b":"3-R015","length":1.48,"kind":"room"},
+  {"a":"3-D025","b":"3-R017","length":4.38,"kind":"room"},
+  {"a":"3-D026","b":"3-R114","length":2.93,"kind":"room"},
+  {"a":"3-R023","b":"3-D034","length":1.03,"kind":"room"},
+  {"a":"3-R018","b":"3-D033","length":2.08,"kind":"room"},
+  {"a":"3-R019","b":"3-D032","length":2.92,"kind":"room"},
+  {"a":"3-D032","b":"3-R023","length":4.23,"kind":"room"},
+  {"a":"3-R023","b":"3-D031","length":2.16,"kind":"room"},
+  {"a":"3-D031","b":"3-R020","length":1.78,"kind":"room"},
+  {"a":"3-R021","b":"3-D030","length":1.85,"kind":"room"},
+  {"a":"3-D030","b":"3-R023","length":1.2,"kind":"room"},
+  {"a":"3-R023","b":"3-D035","length":1.61,"kind":"room"},
+  {"a":"3-D034","b":"3-R115","length":1.84,"kind":"room"},
+  {"a":"3-R115","b":"3-D033","length":3.02,"kind":"room"},
+  {"a":"3-R116","b":"3-D035","length":1.77,"kind":"room"},
+  {"a":"3-R023","b":"3-D029","length":2.87,"kind":"room"},
+  {"a":"3-D029","b":"3-R022","length":1.74,"kind":"room"},
+  {"a":"3-D028","b":"3-R024","length":1.89,"kind":"room"},
+  {"a":"3-R029","b":"3-D036","length":2.65,"kind":"room"},
+  {"a":"3-D036","b":"3-C006","length":1.78,"kind":"doorway"},
+  {"a":"3-C006","b":"3-D037","length":2.17,"kind":"doorway"},
+  {"a":"3-D037","b":"3-R025","length":1.37,"kind":"room"},
+  {"a":"3-R026","b":"3-D038","length":1.99,"kind":"room"},
+  {"a":"3-D038","b":"3-C007","length":2.18,"kind":"doorway"},
+  {"a":"3-C007","b":"3-D039","length":2.08,"kind":"doorway"},
+  {"a":"3-D039","b":"3-R027","length":1.88,"kind":"room"},
+  {"a":"3-C007","b":"3-D040","length":1.35,"kind":"doorway"},
+  {"a":"3-D040","b":"3-R030","length":2.93,"kind":"room"},
+  {"a":"3-C010","b":"3-D041","length":0.99,"kind":"doorway"},
+  {"a":"3-D041","b":"3-R031","length":1.67,"kind":"room"},
+  {"a":"3-C010","b":"3-C044","length":1.63,"kind":"corridor"},
+  {"a":"3-C044","b":"3-C011","length":3.58,"kind":"corridor"},
+  {"a":"3-C011","b":"3-C045","length":4.12,"kind":"corridor"},
+  {"a":"3-C045","b":"3-C012","length":2.01,"kind":"corridor"},
+  {"a":"3-C012","b":"3-C046","length":3.47,"kind":"corridor"},
+  {"a":"3-C046","b":"3-C014","length":1.61,"kind":"corridor"},
+  {"a":"3-R028","b":"3-D043","length":2.76,"kind":"room"},
+  {"a":"3-D043","b":"3-C044","length":0.89,"kind":"doorway"},
+  {"a":"3-C044","b":"3-D044","length":1.03,"kind":"doorway"},
+  {"a":"3-D044","b":"3-R040","length":2.25,"kind":"room"},
+  {"a":"3-C011","b":"3-C047","length":1.57,"kind":"corridor"},
+  {"a":"3-C047","b":"3-D045","length":1.05,"kind":"doorway"},
+  {"a":"3-D045","b":"3-R032","length":0.72,"kind":"room"},
+  {"a":"3-R033","b":"3-D046","length":8.45,"kind":"room"},
+  {"a":"3-D046","b":"3-C047","length":1.12,"kind":"doorway"},
+  {"a":"3-C047","b":"3-D047","length":1.02,"kind":"doorway"},
+  {"a":"3-D047","b":"3-R034","length":1.99,"kind":"room"},
+  {"a":"3-R035","b":"3-D048","length":1.58,"kind":"room"},
+  {"a":"3-D048","b":"3-C045","length":1.47,"kind":"doorway"},
+  {"a":"3-C045","b":"3-D049","length":1.08,"kind":"doorway"},
+  {"a":"3-D049","b":"3-R036","length":1.9,"kind":"room"},
+  {"a":"3-R037","b":"3-D050","length":1.76,"kind":"room"},
+  {"a":"3-D050","b":"3-C013","length":1.14,"kind":"doorway"},
+  {"a":"3-R038","b":"3-D051","length":1.71,"kind":"room"},
+  {"a":"3-D051","b":"3-C046","length":1.26,"kind":"doorway"},
+  {"a":"3-C046","b":"3-D052","length":1.4,"kind":"doorway"},
+  {"a":"3-D052","b":"3-R039","length":1.82,"kind":"room"},
+  {"a":"3-C015","b":"3-D053","length":1.52,"kind":"doorway"},
+  {"a":"3-D053","b":"3-R041","length":3.38,"kind":"room"},
+  {"a":"3-C015","b":"3-D054","length":2.11,"kind":"doorway"},
+  {"a":"3-D054","b":"3-R042","length":11.37,"kind":"room"},
+  {"a":"3-R044","b":"3-D058","length":2.64,"kind":"room"},
+  {"a":"3-D058","b":"3-C048","length":2.95,"kind":"doorway"},
+  {"a":"3-C048","b":"3-D055","length":0.93,"kind":"doorway"},
+  {"a":"3-D055","b":"3-R043","length":1.67,"kind":"room"},
+  {"a":"3-C009","b":"3-C049","length":6.42,"kind":"corridor"},
+  {"a":"3-C049","b":"3-C015","length":1.82,"kind":"corridor"},
+  {"a":"3-C049","b":"3-C048","length":2.75,"kind":"corridor"},
+  {"a":"3-C049","b":"3-D056","length":2.07,"kind":"doorway"},
+  {"a":"3-D056","b":"3-R045","length":2.61,"kind":"room"},
+  {"a":"3-R045","b":"3-D057","length":2.31,"kind":"room"},
+  {"a":"3-C009","b":"3-C050","length":2.35,"kind":"corridor"},
+  {"a":"3-C050","b":"3-C051","length":4.82,"kind":"corridor"},
+  {"a":"3-C051","b":"3-C052","length":5.48,"kind":"corridor"},
+  {"a":"3-C052","b":"3-C053","length":2.71,"kind":"corridor"},
+  {"a":"3-C053","b":"3-C016","length":7.62,"kind":"corridor"},
+  {"a":"3-D027","b":"3-P002","length":2.19,"kind":"room"},
+  {"a":"3-P002","b":"3-D028","length":0.9,"kind":"room"},
+  {"a":"3-P002","b":"3-P001","length":3.21,"kind":"room"},
+  {"a":"3-P001","b":"3-R023","length":4.3,"kind":"room"},
+  {"a":"3-R013","b":"3-D131","length":5.37,"kind":"room"},
+  {"a":"3-D131","b":"3-R014","length":1.88,"kind":"room"},
+  {"a":"3-R014","b":"3-D132","length":1.27,"kind":"room"},
+  {"a":"3-D132","b":"3-R016","length":4.77,"kind":"room"},
+  {"a":"3-D017","b":"3-P003","length":3.43,"kind":"room"},
+  {"a":"3-D012","b":"3-R111","length":2.08,"kind":"room"},
+  {"a":"3-D011","b":"3-R110","length":2.01,"kind":"room"},
+  {"a":"3-D008","b":"3-R108","length":1.99,"kind":"room"},
+  {"a":"3-R109","b":"3-D009","length":2.04,"kind":"room"},
+  {"a":"3-R106","b":"3-D005","length":3.5,"kind":"room"},
+  {"a":"3-D019","b":"3-R117","length":1.91,"kind":"room"},
+  {"a":"3-R117","b":"3-D018","length":1.88,"kind":"room"},
+  {"a":"3-P003","b":"3-R117","length":1.86,"kind":"room"},
+  {"a":"3-R117","b":"3-D020","length":1.29,"kind":"room"},
+  {"a":"3-D010","b":"3-R118","length":2.29,"kind":"room"},
+  {"a":"3-R118","b":"3-D012","length":2.38,"kind":"room"},
+  {"a":"3-R118","b":"3-D011","length":2.42,"kind":"room"},
+  {"a":"3-D007","b":"3-R119","length":2.58,"kind":"room"},
+  {"a":"3-R119","b":"3-D006","length":2.08,"kind":"room"},
+  {"a":"3-D008","b":"3-R119","length":2.64,"kind":"room"},
+  {"a":"3-D009","b":"3-R119","length":2.48,"kind":"room"},
+  {"a":"3-D124","b":"3-R094","length":3.44,"kind":"room"},
+  {"a":"3-R094","b":"3-D126","length":2.58,"kind":"room"},
+  {"a":"3-D126","b":"3-R093","length":1.81,"kind":"room"},
+  {"a":"3-R092","b":"3-D127","length":1.63,"kind":"room"},
+  {"a":"3-D127","b":"3-R094","length":3.32,"kind":"room"},
+  {"a":"3-D125","b":"3-R094","length":2.76,"kind":"room"},
+  {"a":"3-D119","b":"3-R095","length":4.64,"kind":"room"},
+  {"a":"3-R095","b":"3-D120","length":1.64,"kind":"room"},
+  {"a":"3-D120","b":"3-R091","length":1.86,"kind":"room"},
+  {"a":"3-R089","b":"3-D121","length":1.67,"kind":"room"},
+  {"a":"3-D121","b":"3-R095","length":2.58,"kind":"room"},
+  {"a":"3-D123","b":"3-R090","length":1.47,"kind":"room"},
+  {"a":"3-D122","b":"3-R095","length":2.9,"kind":"room"},
+  {"a":"3-R095","b":"3-D123","length":2.38,"kind":"room"},
+  {"a":"3-R120","b":"3-D122","length":0.86,"kind":"room"},
+  {"a":"3-R121","b":"3-D125","length":0.89,"kind":"room"},
+  {"a":"3-R124","b":"3-D002","length":1.32,"kind":"room"},
+  {"a":"3-D003","b":"3-R123","length":3.82,"kind":"room"},
+  {"a":"3-R122","b":"3-D001","length":1.98,"kind":"room"},
+  {"a":"3-R125","b":"3-D129","length":1.58,"kind":"room"},
+  {"a":"3-D128","b":"3-R126","length":1.41,"kind":"room"},
+  {"a":"3-R104","b":"3-D130","length":1.91,"kind":"room"},
+  {"a":"3-C041","b":"3-C054","length":5.2,"kind":"corridor"},
+  {"a":"3-C054","b":"3-C055","length":2.75,"kind":"corridor"},
+  {"a":"3-C055","b":"3-D129","length":1.11,"kind":"doorway"},
+  {"a":"3-D130","b":"3-C055","length":1.39,"kind":"doorway"},
+  {"a":"3-C055","b":"3-D128","length":1.36,"kind":"doorway"},
+  {"a":"3-C054","b":"3-C056","length":3.54,"kind":"corridor"},
+  {"a":"3-C056","b":"3-D115","length":3.21,"kind":"doorway"},
+  {"a":"3-D115","b":"3-R086","length":3.16,"kind":"room"},
+  {"a":"3-R086","b":"3-D118","length":2.81,"kind":"room"},
+  {"a":"3-R129","b":"3-D118","length":0.8,"kind":"room"},
+  {"a":"3-R088","b":"3-D117","length":1.65,"kind":"room"},
+  {"a":"3-D117","b":"3-R086","length":3.38,"kind":"room"},
+  {"a":"3-R087","b":"3-D116","length":1.74,"kind":"room"},
+  {"a":"3-D116","b":"3-R086","length":2.88,"kind":"room"},
+  {"a":"3-C018","b":"3-C057","length":6.52,"kind":"corridor"},
+  {"a":"3-C057","b":"3-C058","length":2.08,"kind":"corridor"},
+  {"a":"3-C058","b":"3-C059","length":3.08,"kind":"corridor"},
+  {"a":"3-C059","b":"3-C060","length":4.58,"kind":"corridor"},
+  {"a":"3-C060","b":"3-C021","length":3.26,"kind":"corridor"},
+  {"a":"3-R085","b":"3-D096","length":2.39,"kind":"room"},
+  {"a":"3-D096","b":"3-C057","length":1.34,"kind":"doorway"},
+  {"a":"3-C057","b":"3-D095","length":1.19,"kind":"doorway"},
+  {"a":"3-R084","b":"3-D095","length":2.5,"kind":"room"},
+  {"a":"3-C058","b":"3-D098","length":1.76,"kind":"doorway"},
+  {"a":"3-R101","b":"3-D097","length":0.8,"kind":"room"},
+  {"a":"3-D097","b":"3-C018","length":2.25,"kind":"doorway"},
+  {"a":"3-R105","b":"3-D114","length":2.65,"kind":"room"},
+  {"a":"3-D114","b":"3-C018","length":2.85,"kind":"doorway"},
+  {"a":"3-C023","b":"3-C061","length":1.68,"kind":"corridor"},
+  {"a":"3-C061","b":"3-C024","length":3.05,"kind":"corridor"},
+  {"a":"3-R099","b":"3-D106","length":0.68,"kind":"room"},
+  {"a":"3-D106","b":"3-C061","length":1.35,"kind":"doorway"},
+  {"a":"3-R098","b":"3-D107","length":0.72,"kind":"room"},
+  {"a":"3-D107","b":"3-C024","length":1.39,"kind":"doorway"},
+  {"a":"3-C024","b":"3-D108","length":1.63,"kind":"doorway"},
+  {"a":"3-R096","b":"3-D098","length":3.72,"kind":"room"},
+  {"a":"3-R096","b":"3-D099","length":3.77,"kind":"room"},
+  {"a":"3-D099","b":"3-R097","length":1.79,"kind":"room"},
+  {"a":"3-D113","b":"3-R097","length":2.28,"kind":"room"},
+  {"a":"3-R097","b":"3-D112","length":2.08,"kind":"room"},
+  {"a":"3-R100","b":"3-D109","length":0.67,"kind":"room"},
+  {"a":"3-D109","b":"3-P004","length":1.49,"kind":"room"},
+  {"a":"3-P004","b":"3-D108","length":2.53,"kind":"room"},
+  {"a":"3-P004","b":"3-P005","length":4.51,"kind":"room"},
+  {"a":"3-P005","b":"3-D110","length":2.15,"kind":"room"},
+  {"a":"3-D110","b":"3-R133","length":1.67,"kind":"room"},
+  {"a":"3-R132","b":"3-D111","length":1.82,"kind":"room"},
+  {"a":"3-D111","b":"3-P005","length":2.05,"kind":"room"},
+  {"a":"3-P005","b":"3-R097","length":5.7,"kind":"room"},
+  {"a":"3-R131","b":"3-D112","length":1.55,"kind":"room"},
+  {"a":"3-D113","b":"3-R130","length":1.53,"kind":"room"},
+  {"a":"3-R083","b":"3-D094","length":1.74,"kind":"room"},
+  {"a":"3-D094","b":"3-C059","length":1.44,"kind":"doorway"},
+  {"a":"3-R082","b":"3-D093","length":1.64,"kind":"room"},
+  {"a":"3-D093","b":"3-C060","length":1.66,"kind":"doorway"},
+  {"a":"3-C060","b":"3-D092","length":1.96,"kind":"doorway"},
+  {"a":"3-D092","b":"3-R081","length":1.85,"kind":"room"},
+  {"a":"3-R070","b":"3-D100","length":1.96,"kind":"room"},
+  {"a":"3-D100","b":"3-C060","length":2.31,"kind":"doorway"},
+  {"a":"3-C021","b":"3-C062","length":2.77,"kind":"corridor"},
+  {"a":"3-C062","b":"3-C063","length":6.03,"kind":"corridor"},
+  {"a":"3-C063","b":"3-C016","length":3.33,"kind":"corridor"},
+  {"a":"3-R065","b":"3-D101","length":2.28,"kind":"room"},
+  {"a":"3-D101","b":"3-C062","length":2.01,"kind":"doorway"},
+  {"a":"3-C062","b":"3-D091","length":1.82,"kind":"doorway"},
+  {"a":"3-D091","b":"3-R080","length":1.69,"kind":"room"},
+  {"a":"3-R079","b":"3-D090","length":1.79,"kind":"room"},
+  {"a":"3-D090","b":"3-C062","length":1.72,"kind":"doorway"},
+  {"a":"3-R078","b":"3-D089","length":2.11,"kind":"room"},
+  {"a":"3-D089","b":"3-C063","length":1.53,"kind":"doorway"},
+  {"a":"3-C063","b":"3-D088","length":1.57,"kind":"doorway"},
+  {"a":"3-D088","b":"3-R077","length":1.73,"kind":"room"},
+  {"a":"3-R127","b":"3-D077","length":1.59,"kind":"room"},
+  {"a":"3-C016","b":"3-C064","length":5.27,"kind":"corridor"},
+  {"a":"3-R069","b":"3-D105","length":2.6,"kind":"room"},
+  {"a":"3-D105","b":"3-C022","length":2.53,"kind":"doorway"},
+  {"a":"3-C022","b":"3-D102","length":2.54,"kind":"doorway"},
+  {"a":"3-R068","b":"3-D104","length":1.41,"kind":"room"},
+  {"a":"3-D104","b":"3-C022","length":1.55,"kind":"doorway"},
+  {"a":"3-C022","b":"3-D103","length":1.56,"kind":"doorway"},
+  {"a":"3-D103","b":"3-R067","length":1.52,"kind":"room"},
+  {"a":"3-R066","b":"3-D102","length":2.64,"kind":"room"},
+  {"a":"3-D077","b":"3-C064","length":1.7,"kind":"doorway"},
+  {"a":"3-C064","b":"3-D076","length":1.5,"kind":"doorway"},
+  {"a":"3-D076","b":"3-R128","length":1.63,"kind":"room"},
+  {"a":"3-D078","b":"3-C064","length":1.43,"kind":"doorway"},
+  {"a":"3-R057","b":"3-D079","length":1.45,"kind":"room"},
+  {"a":"3-D079","b":"3-C065","length":1.76,"kind":"doorway"},
+  {"a":"3-C065","b":"3-C019","length":1.55,"kind":"corridor"},
+  {"a":"3-R058","b":"3-D080","length":7.33,"kind":"room"},
+  {"a":"3-D080","b":"3-C065","length":1.86,"kind":"doorway"},
+  {"a":"3-C065","b":"3-D081","length":2.03,"kind":"doorway"},
+  {"a":"3-D081","b":"3-R059","length":1.65,"kind":"room"},
+  {"a":"3-C019","b":"3-C066","length":3.42,"kind":"corridor"},
+  {"a":"3-C066","b":"3-C020","length":2.36,"kind":"corridor"},
+  {"a":"3-R060","b":"3-D082","length":1.84,"kind":"room"},
+  {"a":"3-D082","b":"3-C066","length":1.94,"kind":"doorway"},
+  {"a":"3-C066","b":"3-D087","length":1.83,"kind":"doorway"},
+  {"a":"3-C066","b":"3-D083","length":1.95,"kind":"doorway"},
+  {"a":"3-D083","b":"3-R061","length":1.79,"kind":"room"},
+  {"a":"3-R062","b":"3-D084","length":2.33,"kind":"room"},
+  {"a":"3-D084","b":"3-C020","length":1.56,"kind":"doorway"},
+  {"a":"3-C020","b":"3-D085","length":2.79,"kind":"doorway"},
+  {"a":"3-D085","b":"3-R063","length":1.64,"kind":"room"},
+  {"a":"3-C020","b":"3-D086","length":3.25,"kind":"doorway"},
+  {"a":"3-D086","b":"3-R064","length":2.41,"kind":"room"},
+  {"a":"3-R054","b":"3-D075","length":1.32,"kind":"room"},
+  {"a":"3-D075","b":"3-C017","length":3.21,"kind":"doorway"},
+  {"a":"3-C017","b":"3-D074","length":2.78,"kind":"doorway"},
+  {"a":"3-D074","b":"3-R053","length":1.4,"kind":"room"},
+  {"a":"3-D073","b":"3-C017","length":1.97,"kind":"doorway"},
+  {"a":"3-D073","b":"3-R042","length":11.72,"kind":"room"},
+  {"a":"3-R052","b":"3-D069","length":1.51,"kind":"room"},
+  {"a":"3-D069","b":"3-P006","length":1.79,"kind":"room"},
+  {"a":"3-P006","b":"3-D070","length":1.79,"kind":"room"},
+  {"a":"3-D070","b":"3-R050","length":2.12,"kind":"room"},
+  {"a":"3-R051","b":"3-D067","length":2.56,"kind":"room"},
+  {"a":"3-D068","b":"3-R051","length":1.99,"kind":"room"},
+  {"a":"3-R134","b":"3-D068","length":0.81,"kind":"room"},
+  {"a":"3-C016","b":"3-C067","length":4.67,"kind":"corridor"},
+  {"a":"3-D067","b":"3-C067","length":1.3,"kind":"doorway"},
+  {"a":"3-C067","b":"3-C068","length":1.82,"kind":"corridor"},
+  {"a":"3-C068","b":"3-C017","length":1.68,"kind":"corridor"},
+  {"a":"3-C068","b":"3-P006","length":3.4,"kind":"room"},
+  {"a":"3-R076","b":"3-D065","length":1.97,"kind":"room"},
+  {"a":"3-D065","b":"3-C053","length":2.58,"kind":"doorway"},
+  {"a":"3-C053","b":"3-D066","length":1.53,"kind":"doorway"},
+  {"a":"3-D066","b":"3-R048","length":2.35,"kind":"room"},
+  {"a":"3-R048","b":"3-D071","length":2.38,"kind":"room"},
+  {"a":"3-D071","b":"3-R049","length":2.08,"kind":"room"},
+  {"a":"3-R075","b":"3-D064","length":2.11,"kind":"room"},
+  {"a":"3-D064","b":"3-C052","length":1.6,"kind":"doorway"},
+  {"a":"3-C052","b":"3-D063","length":1.59,"kind":"doorway"},
+  {"a":"3-D063","b":"3-R074","length":1.89,"kind":"room"},
+  {"a":"3-R073","b":"3-D062","length":1.57,"kind":"room"},
+  {"a":"3-D062","b":"3-C051","length":1.69,"kind":"doorway"},
+  {"a":"3-C051","b":"3-D059","length":1.78,"kind":"doorway"},
+  {"a":"3-D059","b":"3-R046","length":2.17,"kind":"room"},
+  {"a":"3-R046","b":"3-D072","length":2.47,"kind":"room"},
+  {"a":"3-D072","b":"3-R047","length":2.34,"kind":"room"},
+  {"a":"3-R072","b":"3-D061","length":2.08,"kind":"room"},
+  {"a":"3-D061","b":"3-C051","length":1.55,"kind":"doorway"},
+  {"a":"3-R071","b":"3-D060","length":1.86,"kind":"room"},
+  {"a":"3-D060","b":"3-C050","length":1.42,"kind":"doorway"},
+  {"a":"3-R135","b":"3-D006","length":0.65,"kind":"room"},
+  {"a":"3-R136","b":"3-D014","length":0.71,"kind":"room"},
+  {"a":"3-R137","b":"3-D022","length":0.6,"kind":"room"},
+  {"a":"3-D057","b":"3-R139","length":0.68,"kind":"room"},
+  {"a":"3-S001","b":"3-D078","length":1.07,"kind":"doorway","stairs":true},
+  {"a":"3-R140","b":"3-D087","length":0.72,"kind":"room"},
+  {"a":"3-C056","b":"3-C069","length":2.53,"kind":"corridor"},
+  {"a":"3-C069","b":"3-C018","length":3.4,"kind":"corridor"},
+  {"a":"3-S002","b":"3-D134","length":1.34,"kind":"doorway","stairs":true},
+  {"a":"3-D134","b":"3-C069","length":2.44,"kind":"doorway"},
+  {"a":"3-S003","b":"3-D133","length":1.38,"kind":"doorway","stairs":true},
+  {"a":"3-D133","b":"3-C002","length":1.52,"kind":"doorway"},
+  {"a":"3-C064","b":"3-C070","length":1.87,"kind":"corridor"},
+  {"a":"3-C070","b":"3-C019","length":4.06,"kind":"corridor"},
+  {"a":"3-E001","b":"3-C040","length":2.45,"kind":"doorway"},
+  {"a":"3-C040","b":"3-E002","length":3.53,"kind":"doorway"},
+  {"a":"3-E003","b":"3-C064","length":2.52,"kind":"doorway"},
+  {"a":"3-R086","b":"3-R141","length":3.03,"kind":"room"},
+  {"a":"3-R142","b":"3-R094","length":2.81,"kind":"room"}
+ ]
+}
