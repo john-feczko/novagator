@@ -374,10 +374,18 @@ function drawHit(line: Box | null, frame: Gray, ok: boolean) {
 }
 const clearHits = () => { const c = $<HTMLCanvasElement>('#hits'); c.getContext('2d')?.clearRect(0, 0, c.width, c.height) }
 
+// Always hand control back to the browser between frames. A frame with no
+// number in it is read without any real waiting, and without this pause the
+// loop would spin forever: taps, the camera preview and Cancel all freeze.
+const pause = (ms: number) => new Promise((r) => setTimeout(r, ms))
+const FRAME_GAP_MS = 120
+
 async function loop() {
   while (scanning && reader) {
+    await pause(FRAME_GAP_MS)
+    if (!scanning) break
     const b = boxInVideo()
-    if (!b) { await new Promise((r) => setTimeout(r, 100)); continue }
+    if (!b) continue
     const frame = grabGray(video, b.x, b.y, b.w, b.h)
     const res = await reader.read(frame)
     if (!scanning) break
